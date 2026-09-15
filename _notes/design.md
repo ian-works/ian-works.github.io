@@ -53,7 +53,7 @@ DOM 순서는 `intro → art → content` 입니다. 900px 이하에서 한 단�
 
 각 섹션에 주석을 달아 두었습니다. `li` 하나를 같은 모양으로 복사하면 됩니다.
 
-**Books** — 제목 왼쪽, 메타 오른쪽, 행마다 실선:
+**저서** — 제목 왼쪽, 메타 오른쪽, 행마다 실선:
 
 ```html
 <li>
@@ -62,7 +62,7 @@ DOM 순서는 `intro → art → content` 입니다. 900px 이하에서 한 단�
 </li>
 ```
 
-**App / Web Service** — 제목 + 상태 + 설명 한 문단:
+**앱 / 웹 서비스** — 제목 + 상태 + 설명 한 문단:
 
 ```html
 <li>
@@ -100,6 +100,13 @@ DOM 순서는 `intro → art → content` 입니다. 900px 이하에서 한 단�
   [sources.md](sources.md)의 표지 URL을 참고하세요
 - 상단 내비게이션 — 한 화면에 다 들어와서 없앴습니다
 - `@ian-works` 핸들 줄 — 꼬리말의 GitHub 링크로 갈음합니다
-- OG 이미지는 국내판 표지(`assets/book-ko-2023.jpg`)를 가리킵니다. 세로
-  이미지라 `twitter:card` 는 `summary` 로 두었습니다. 가로 OG 이미지를 따로
-  만들면 `summary_large_image` 로 바꿀 수 있습니다
+- 책 표지 파일은 더 쓰지 않아 저장소에서 지웠습니다. 원본 주소는
+  [sources.md](sources.md)에 있습니다
+
+## 링크 미리보기
+
+`assets/og.png` (1200×630). 왼쪽에 이름과 한 줄, 오른쪽에 풍경 — 사이트
+레이아웃을 그대로 줄인 카드입니다. `twitter:card` 는 `summary_large_image`.
+
+풍경이나 문구를 고치면 이 이미지도 다시 뽑아야 합니다. 만드는 법은
+[workflow.md](workflow.md)에 있습니다.
