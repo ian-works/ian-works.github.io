@@ -1,1 +1,305 @@
-ian works site
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ian Lee — 만드는 것들</title>
+<meta name="description" content="Ian Lee의 포트폴리오. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
+<meta name="author" content="Ian Lee">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ian-works.github.io/">
+<meta property="og:title" content="Ian Lee — 만드는 것들">
+<meta property="og:description" content="보안 소프트웨어 개발자이자 저자. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
+<meta property="og:image" content="https://ian-works.github.io/assets/book-ko-2023.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/blue-argos-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Ian Lee 홈">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">ian<span class="brand-dim">.works</span></span>
+    </a>
+    <nav class="nav-links" aria-label="주요 섹션">
+      <a href="#about">소개</a>
+      <a href="#books">저서</a>
+      <a href="#apps">앱</a>
+      <a href="#services">웹 서비스</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="top">
+    <div class="hero-rings" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Security Software Engineer &middot; Author &middot; Maker</p>
+      <h1 class="hero-title">Ian&nbsp;Lee</h1>
+      <p class="hero-lead">기존에 없던 <em>편리한 무언가</em>를 만듭니다.</p>
+      <p class="hero-sub">
+        안랩에서 10년간 보안 솔루션을 개발했고, 지금은 삼성전자에서 개발자로 일합니다.
+        그 사이사이에 책을 쓰고, 앱을 만들고, 아직 세상에 없는 도구를 궁리합니다.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#books">만든 것들 보기</a>
+        <a class="btn" href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-label"><span class="num">01</span> ABOUT</p>
+        <h2 class="section-title">소개</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            보안 소프트웨어를 만들며 커리어를 시작했습니다. 악성코드를 걸러내는 엔진부터
+            커널을 건드리는 방어 계층까지, 눈에 잘 보이지 않는 자리에서 동작하는 소프트웨어를
+            오래 다뤘습니다.
+          </p>
+          <p>
+            지금 관심은 하나입니다 — <strong>기존에 없던 편리한 무언가를 만드는 것.</strong>
+            이미 있는 것을 조금 낫게 만드는 일보다, 아직 아무도 만들지 않아서 모두가 불편을
+            감수하고 있는 지점을 찾는 쪽이 재미있습니다. 이 사이트는 그렇게 만들어 온 결과물을
+            한자리에 모아둔 곳입니다.
+          </p>
+        </div>
+
+        <ol class="career">
+          <li class="career-item is-current">
+            <span class="career-when">현재</span>
+            <div class="career-body">
+              <h3>삼성전자</h3>
+              <p>개발자</p>
+            </div>
+          </li>
+          <li class="career-item">
+            <span class="career-when">10년</span>
+            <div class="career-body">
+              <h3>안랩 <span class="muted">AhnLab</span></h3>
+              <p>다수의 보안 솔루션 개발 — PC용 V3 방화벽, 침입차단 시스템 엔진, 웹 보안 솔루션</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <p class="keywords">
+        <span class="keywords-label">KEYWORDS</span>
+        <span>Linux &middot; Kernel &middot; Antivirus &middot; IoT Security &middot; UML / Software Design &middot; Mobile App</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKS ==================== -->
+  <section class="section section-alt" id="books">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-label"><span class="num">02</span> BOOKS</p>
+        <h2 class="section-title">저서</h2>
+        <p class="section-desc">
+          보안 솔루션을 만들어 본 적 없는 사람을 위한 <strong>Security School</strong> 시리즈.
+          요구사항을 모으고, UML로 설계하고, 리눅스 커널을 수정해 가며 백신을 완성하는
+          과정을 이야기로 담았습니다.
+        </p>
+      </div>
+
+      <figure class="pullquote">
+        <blockquote>저도 백신을 개발할 수 있을까요?</blockquote>
+        <figcaption>네. 여러분도 개발할 수 있습니다. 백신도 소프트웨어의 한 종류니까요.</figcaption>
+      </figure>
+
+      <ol class="flow">
+        <li>요구사항</li>
+        <li>프로토타입</li>
+        <li>설계</li>
+        <li>구현</li>
+        <li>테스트</li>
+      </ol>
+
+      <!-- 책이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
+      <ul class="entries">
+
+        <li>
+          <a class="entry" href="https://product.kyobobook.co.kr/detail/S000202225021" target="_blank" rel="noopener noreferrer">
+            <div class="entry-visual entry-visual-book">
+              <img src="assets/book-ko-2023.jpg" alt="『UML로 개발하는 리눅스 백신 프로그램』 표지"
+                   width="478" height="692" loading="lazy" decoding="async">
+            </div>
+            <div class="entry-body">
+              <div class="entry-head">
+                <h3 class="entry-title">UML로 개발하는 리눅스 백신 프로그램</h3>
+                <span class="pill pill-live">판매 중</span>
+              </div>
+              <p class="entry-sub">초보 개발자가 소프트웨어 공모전에 도전하는 이야기</p>
+              <p class="entry-meta">국내판 &middot; 소나무에 &middot; 2023 &middot; 331쪽</p>
+            </div>
+            <span class="entry-go">교보문고<span class="ext" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a class="entry" href="https://www.amazon.com/-/ko/dp/B077VRYKYP" target="_blank" rel="noopener noreferrer">
+            <div class="entry-visual entry-visual-book">
+              <img src="assets/book-en-2017.jpg" alt="“Beginning Linux Antivirus Development” 표지"
+                   width="405" height="500" loading="lazy" decoding="async">
+            </div>
+            <div class="entry-body">
+              <div class="entry-head">
+                <h3 class="entry-title">Beginning Linux Antivirus Development</h3>
+                <span class="pill pill-live">판매 중</span>
+              </div>
+              <p class="entry-sub">The Story about IoT Security Design with UML</p>
+              <p class="entry-meta">영문판 &middot; Kindle &middot; 2017</p>
+            </div>
+            <span class="entry-go">Amazon<span class="ext" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a class="entry" href="https://www.hanbit.co.kr/books/%EC%A7%81%EC%A0%91-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94-iot-%EB%B0%B1%EC%8B%A0-%EC%B4%88%EA%B8%89?code=B8304726903" target="_blank" rel="noopener noreferrer">
+            <div class="entry-visual entry-visual-book">
+              <img src="assets/book-hanbit-2017.jpg" alt="『직접 설계하고 개발하는 IoT 백신(초급)』 표지"
+                   width="400" height="514" loading="lazy" decoding="async">
+            </div>
+            <div class="entry-body">
+              <div class="entry-head">
+                <h3 class="entry-title">직접 설계하고 개발하는 IoT 백신(초급)</h3>
+                <span class="pill pill-retired">절판</span>
+              </div>
+              <p class="entry-sub">같은 내용을 처음 출간한 판본</p>
+              <p class="entry-meta">한빛미디어 &middot; 2017 &middot; 300쪽</p>
+            </div>
+            <span class="entry-go">한빛미디어<span class="ext" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+
+      </ul>
+
+      <a class="video-link" href="https://www.youtube.com/watch?v=dAGKQBZxKFI" target="_blank" rel="noopener noreferrer">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/dAGKQBZxKFI/hqdefault.jpg" alt=""
+               width="480" height="360" loading="lazy" decoding="async">
+          <span class="video-play" aria-hidden="true"></span>
+        </div>
+        <div class="video-body">
+          <p class="video-label">DEMO VIDEO</p>
+          <p class="video-title">책에서 만드는 백신이 실제로 동작하는 모습</p>
+        </div>
+        <span class="entry-go">YouTube<span class="ext" aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== APPS ==================== -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-label"><span class="num">03</span> APPS</p>
+        <h2 class="section-title">앱</h2>
+        <p class="section-desc">불편한데 아무도 만들지 않고 있던 것들을 하나씩 만들고 있습니다.</p>
+      </div>
+
+      <!-- 앱이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
+      <ul class="entries">
+
+        <li>
+          <a class="entry" href="https://ian-works.github.io/blue-argos/" target="_blank" rel="noopener noreferrer">
+            <div class="entry-visual entry-visual-app">
+              <img src="assets/blue-argos-icon.png" alt="BlueArgos 앱 아이콘"
+                   width="256" height="256" loading="lazy" decoding="async">
+            </div>
+            <div class="entry-body">
+              <div class="entry-head">
+                <h3 class="entry-title">BlueArgos</h3>
+                <span class="pill pill-testing">테스트 중</span>
+              </div>
+              <p class="entry-sub">깨끗하고 편리한 과속카메라 알림</p>
+              <p class="entry-desc">
+                경로를 입력하지 않아도 지금 달리는 길 위의 카메라를 알려줍니다.
+                현재 속도를 기준으로 모든 카메라를 똑같이 15초 전에.
+                회원가입도, 차량 정보도, 광고도 없습니다.
+              </p>
+              <p class="entry-meta">iOS &middot; Android</p>
+            </div>
+            <span class="entry-go">자세히 보기<span class="ext" aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== WEB SERVICES ==================== -->
+  <section class="section section-alt" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-label"><span class="num">04</span> WEB SERVICE</p>
+        <h2 class="section-title">웹 서비스</h2>
+      </div>
+
+      <!-- 서비스가 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
+      <ul class="entries">
+
+        <li>
+          <div class="entry is-wip">
+            <div class="entry-visual entry-visual-empty" aria-hidden="true">
+              <span class="wip-mark"></span>
+            </div>
+            <div class="entry-body">
+              <div class="entry-head">
+                <h3 class="entry-title">Save my time</h3>
+                <span class="pill pill-building">개발 중</span>
+              </div>
+              <p class="entry-sub">반복에 쓰는 시간을 돌려주는 웹 서비스</p>
+              <p class="entry-desc">아직 만드는 중입니다. 준비되는 대로 이곳에 공개합니다.</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Ian Lee</span>
+    </div>
+    <nav class="footer-links" aria-label="바로가기">
+      <a href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span></a>
+      <a href="https://ian-works.github.io/blue-argos/" target="_blank" rel="noopener noreferrer">BlueArgos<span class="ext" aria-hidden="true">↗</span></a>
+    </nav>
+    <p class="footer-note">&copy; <span id="year">2026</span> Ian Lee</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
