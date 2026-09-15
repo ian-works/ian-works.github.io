@@ -90,7 +90,9 @@ DOM 순서는 `intro → art → content` 입니다. 900px 이하에서 한 단�
 - 링크 밑줄은 기본으로 켜 두고 호버에서 진해집니다. `text-underline-offset`
   으로 한글 받침과 겹치지 않게 띄웠습니다
 - 파비콘은 `assets/favicon.svg` — 어두운 타일에 세리프 `ian`. 16px에서도
-  읽히도록 글자를 최대한 키웠습니다
+  읽히도록 글자를 최대한 키웠습니다. `assets/apple-touch-icon.png` 는 같은
+  SVG를 180px로 렌더링한 것이라, 파비콘을 고치면 같이 다시 만들어야 합니다
+  ([workflow.md](workflow.md) 참고)
 
 ## 지금 쓰지 않는 것
 

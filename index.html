@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/blue-argos-icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&display=swap">
@@ -33,7 +33,7 @@
     <h1>Ian Lee</h1>
 
     <p class="lede">
-      보안 회사에서 보안솔루션을 개발했었고, 현재는 국내 전자회사에서 개발자로 근무중입니다.
+      보안 회사에서 보안 솔루션을 개발했었고, 현재는 국내 전자회사에서 개발자로 근무 중입니다.
     </p>
     <p class="lede">
       사람들에게 편리하고 이로운 무언가를 만드는 걸 좋아합니다.
@@ -44,257 +44,361 @@
   <aside class="art">
     <figure class="scene-wrap">
       <svg class="scene" viewBox="0 0 300 450" role="img"
-           aria-label="산 중턱에 한옥 한 채가 있고, 그 앞으로 텃밭과 개울이 흐르는 가을 풍경. 바람에 풀과 나무가 흔들리고, 개울에는 물고기가, 하늘에는 뭉게구름과 새가 지나갑니다.">
+           aria-label="가을 산골 풍경. 겹겹이 물러나는 단풍 든 산, 그 아래 한옥 한 채, 앞으로 배추가 자란 텃밭과 울타리, 맨 앞에는 조약돌이 비치는 개울이 흐릅니다. 바람에 나무와 풀이 흔들리고, 개울에는 물고기가, 하늘에는 뭉게구름과 새떼가 지나갑니다.">
         <defs>
           <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#5eb0dd"/>
-            <stop offset="0.45" stop-color="#9fd2ec"/>
-            <stop offset="1" stop-color="#dcf0f8"/>
+            <stop offset="0" stop-color="#7cc3e6"/>
+            <stop offset="0.6" stop-color="#b6dcee"/>
+            <stop offset="1" stop-color="#e2f1f7"/>
           </linearGradient>
           <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#6cb4d6"/>
-            <stop offset="1" stop-color="#abdaeb"/>
+            <stop offset="0" stop-color="#a9d8ec"/>
+            <stop offset="1" stop-color="#7fbfe0"/>
           </linearGradient>
-          <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#b3ae74"/>
-            <stop offset="1" stop-color="#d2ca96"/>
+          <linearGradient id="paddy" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d8bf74"/>
+            <stop offset="1" stop-color="#e5d18d"/>
           </linearGradient>
 
-          <clipPath id="clipSky"><rect x="0" y="0" width="300" height="215"/></clipPath>
+          <clipPath id="clipSky"><rect x="0" y="0" width="300" height="176"/></clipPath>
           <clipPath id="clipWater">
-            <path d="M0,372 C50,364 110,378 160,372 C212,366 262,376 300,370 L300,450 L0,450 Z"/>
+            <path d="M-10,378 C50,368 110,360 170,350 C220,342 266,336 310,332 L310,460 L-10,460 Z"/>
           </clipPath>
 
-          <!-- 텃밭 모종 한 포기 — 잎이 낮게 퍼진 모양 -->
-          <g id="sprout">
-            <ellipse cx="-2.9" cy="-1.5" rx="3.3" ry="1.9" fill="#6fa055"/>
-            <ellipse cx="2.9" cy="-1.5" rx="3.3" ry="1.9" fill="#7cae5f"/>
-            <ellipse cx="0" cy="-3.3" rx="2.7" ry="2.1" fill="#86ba68"/>
+          <!-- 단풍나무 세 가지 색. 밑동이 원점, 잎 덩어리는 밝은 면과 그늘로 나눈다 -->
+          <g id="tree-o">
+            <path d="M0,0 L0,-15" stroke="#7a5c3e" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M-1,-10 L-9,-16 M1,-11 L9,-17" stroke="#7a5c3e" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M-15,-19 C-22,-26 -17,-37 -7,-37 C-2,-43 10,-42 13,-35 C21,-32 21,-22 13,-18 C7,-13 -9,-13 -15,-19 Z"
+                  fill="#e08a3c"/>
+            <path d="M-15,-19 C-9,-13 7,-13 13,-18 C7,-15 -8,-15 -15,-19 Z" fill="#bd6d29"/>
+            <path d="M-7,-37 C-2,-43 10,-42 13,-35 C8,-38 -2,-39 -7,-37 Z" fill="#f0a556"/>
+          </g>
+          <g id="tree-r">
+            <path d="M0,0 L0,-13" stroke="#7a5c3e" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M-1,-9 L-8,-14 M1,-10 L8,-15" stroke="#7a5c3e" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M-13,-17 C-19,-24 -15,-33 -6,-33 C-2,-39 9,-38 12,-31 C19,-28 19,-20 12,-16 C6,-11 -8,-11 -13,-17 Z"
+                  fill="#cf5a3a"/>
+            <path d="M-13,-17 C-8,-11 6,-11 12,-16 C6,-13 -7,-13 -13,-17 Z" fill="#a8402a"/>
+            <path d="M-6,-33 C-2,-39 9,-38 12,-31 C7,-34 -2,-35 -6,-33 Z" fill="#e0754f"/>
+          </g>
+          <g id="tree-y">
+            <path d="M0,0 L0,-14" stroke="#7a5c3e" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M-1,-10 L-8,-15 M1,-10 L8,-15" stroke="#7a5c3e" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M-14,-18 C-20,-25 -16,-35 -6,-35 C-2,-41 10,-40 13,-33 C20,-30 20,-21 12,-17 C6,-12 -9,-12 -14,-18 Z"
+                  fill="#e6b94e"/>
+            <path d="M-14,-18 C-9,-12 6,-12 12,-17 C6,-14 -8,-14 -14,-18 Z" fill="#c99a33"/>
+            <path d="M-6,-35 C-2,-41 10,-40 13,-33 C8,-36 -2,-37 -6,-35 Z" fill="#f2cd6c"/>
+          </g>
+          <g id="pine2">
+            <path d="M0,0 L0,-11" stroke="#7a5c3e" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M0,-32 L-8,-18 L-4,-18 L-11,-6 L11,-6 L4,-18 L8,-18 Z" fill="#5d8a52"/>
+            <path d="M0,-32 L-8,-18 L-2,-18 L-2,-6 L-11,-6 Z" fill="#6f9a62" opacity="0.8"/>
           </g>
 
-          <!-- 소나무 -->
-          <g id="pine">
-            <path d="M0,0 L0,-12" stroke="#6b5a45" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M0,-24 L-7,-9 L7,-9 Z" fill="#54804f"/>
-            <path d="M0,-17 L-9,-3 L9,-3 Z" fill="#628f5b"/>
+          <!-- 텃밭 배추 -->
+          <g id="cabbage">
+            <ellipse cx="-4.6" cy="2.4" rx="3.8" ry="2.1" fill="#6f9a45"/>
+            <ellipse cx="4.6" cy="2.4" rx="3.8" ry="2.1" fill="#6f9a45"/>
+            <circle cx="0" cy="0" r="5.2" fill="#8fbe5c"/>
+            <path d="M0,-5.2 A5.2,5.2 0 0,0 0,5.2 A5.2,5.2 0 0,0 0,-5.2 Z" fill="#7cae4e" opacity="0.6"/>
+            <ellipse cx="0" cy="-1.4" rx="2.3" ry="1.9" fill="#a3cd72"/>
           </g>
 
           <!-- 물고기 -->
-          <g id="fish">
-            <path d="M0,0 C4,-3.4 11,-3.4 15,0 C11,3.4 4,3.4 0,0 Z" fill="#e0904a"/>
-            <path d="M0,0 L-5.5,-3.4 L-5.5,3.4 Z" fill="#d1782c"/>
-            <circle cx="11" cy="-0.9" r="0.8" fill="#3d3024"/>
-          </g>
-        </defs>
-
-        <!-- 하늘 -->
-        <rect x="0" y="0" width="300" height="450" fill="url(#sky)"/>
-
-        <g clip-path="url(#clipSky)">
-          <!-- 뭉게구름 -->
-          <g class="cloud cloud-1" fill="#ffffff" opacity="0.96">
-            <ellipse cx="0" cy="66" rx="38" ry="15"/>
-            <ellipse cx="-27" cy="70" rx="24" ry="12"/>
-            <ellipse cx="28" cy="70" rx="25" ry="13"/>
-            <ellipse cx="-3" cy="46" rx="25" ry="19"/>
-            <ellipse cx="-24" cy="54" rx="18" ry="14"/>
-            <ellipse cx="21" cy="52" rx="20" ry="15"/>
-            <ellipse cx="7" cy="32" rx="15" ry="12"/>
-          </g>
-          <g class="cloud cloud-2" fill="#ffffff" opacity="0.85">
-            <ellipse cx="0" cy="130" rx="30" ry="12"/>
-            <ellipse cx="-21" cy="133" rx="19" ry="9"/>
-            <ellipse cx="22" cy="133" rx="20" ry="10"/>
-            <ellipse cx="-1" cy="115" rx="19" ry="15"/>
-            <ellipse cx="-17" cy="121" rx="14" ry="11"/>
-            <ellipse cx="15" cy="119" rx="15" ry="12"/>
-          </g>
-          <g class="cloud cloud-3" fill="#ffffff" opacity="0.72">
-            <ellipse cx="0" cy="28" rx="24" ry="10"/>
-            <ellipse cx="-17" cy="31" rx="15" ry="8"/>
-            <ellipse cx="17" cy="31" rx="16" ry="8"/>
-            <ellipse cx="2" cy="17" rx="14" ry="11"/>
-            <ellipse cx="-12" cy="22" rx="10" ry="8"/>
+          <g id="fish2">
+            <path d="M0,0 C4,-4 12,-4.4 17,0 C12,4.4 4,4 0,0 Z" fill="#d8a961"/>
+            <path d="M0,0 C4,-4 12,-4.4 17,0 C12,1.2 4,1.4 0,0 Z" fill="#c08f49"/>
+            <path d="M0,0 L-6,-4.2 L-6,4.2 Z" fill="#c08f49"/>
+            <path d="M7,-3.6 L10,-6.2 L13,-3.2 Z" fill="#c08f49"/>
+            <circle cx="13.6" cy="-1" r="0.9" fill="#3d3024"/>
           </g>
 
           <!-- 새 -->
+          <g id="bird2">
+            <path d="M-5,0 C-3,-3.4 -1,-3.4 0,-0.8 C1,-3.4 3,-3.4 5,0"
+                  fill="none" stroke="#5d6a74" stroke-width="1.2" stroke-linecap="round"/>
+          </g>
+
+          <!-- 조약돌 -->
+          <g id="pebble"><ellipse rx="3.6" ry="2.3" fill="#cdbca4"/></g>
+
+          <!-- 억새 포기 -->
+          <g id="tuft">
+            <path d="M0,0 C-1.6,-5 -4.6,-9 -7,-12" stroke="#8a9a46" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M0,0 C0,-6 0.4,-10 1.4,-14" stroke="#a2b158" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M0,0 C2.2,-5 5,-9 7.4,-11.4" stroke="#8a9a46" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <path d="M0,0 C3.4,-3.6 6,-6 8.6,-7.6" stroke="#c9b768" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+          </g>
+        </defs>
+
+        <!-- ================= 하늘 ================= -->
+        <rect x="0" y="0" width="300" height="450" fill="url(#sky)"/>
+
+        <g clip-path="url(#clipSky)">
+          <!-- 뭉게구름. 흰 덩어리 + 아랫면 그늘 -->
+          <!-- 바깥 그룹은 흘러가는 애니메이션, 안쪽 그룹이 제자리를 잡는다 -->
+          <g class="cloud cloud-1"><g transform="translate(0,52)">
+            <path d="M-44,20 C-54,20 -58,10 -50,4 C-56,-8 -44,-18 -32,-13 C-27,-27 -6,-31 4,-22
+                     C13,-31 30,-28 34,-17 C47,-19 56,-8 50,3 C56,10 50,20 40,20 Z" fill="#ffffff"/>
+            <path d="M-50,10 C-40,17 -18,20 4,20 C22,20 36,17 48,10
+                     C52,16 48,20 40,20 L-44,20 C-50,20 -53,15 -50,10 Z" fill="#d7e7f1"/>
+            <ellipse cx="6" cy="-18" rx="18" ry="9" fill="#ffffff"/>
+          </g></g>
+          <g class="cloud cloud-2"><g transform="translate(0,116)">
+            <path d="M-34,16 C-43,16 -46,7 -39,2 C-44,-8 -34,-16 -24,-12 C-19,-23 -2,-26 5,-18
+                     C13,-25 27,-22 30,-13 C41,-14 47,-4 41,3 C46,9 41,16 33,16 Z" fill="#ffffff"/>
+            <path d="M-40,8 C-30,14 -12,16 6,16 C20,16 32,14 42,8
+                     C45,13 41,16 33,16 L-34,16 C-41,16 -43,12 -40,8 Z" fill="#dae9f2"/>
+          </g></g>
+          <g class="cloud cloud-3"><g transform="translate(0,26)">
+            <path d="M-26,12 C-34,12 -36,4 -30,0 C-34,-8 -26,-15 -17,-11 C-13,-20 1,-22 7,-15
+                     C14,-20 25,-17 27,-9 C36,-9 40,-1 35,4 C39,9 35,12 28,12 Z" fill="#ffffff"/>
+            <path d="M-30,6 C-22,10 -8,12 6,12 C18,12 28,10 36,6
+                     C39,10 35,12 28,12 L-26,12 C-32,12 -33,9 -30,6 Z" fill="#dfebf3"/>
+          </g></g>
+
+          <!-- 새떼 -->
           <g class="bird bird-1"><g class="wing">
-            <path d="M-6,0 Q-3,-4.2 0,-1 Q3,-4.2 6,0" fill="none" stroke="#4e5a66" stroke-width="1.4" stroke-linecap="round"/>
+            <use href="#bird2" transform="translate(0,120)"/>
+            <use href="#bird2" transform="translate(17,112) scale(0.9)"/>
+            <use href="#bird2" transform="translate(32,126) scale(0.82)"/>
+            <use href="#bird2" transform="translate(49,116) scale(0.76)"/>
+            <use href="#bird2" transform="translate(24,140) scale(0.7)"/>
           </g></g>
           <g class="bird bird-2"><g class="wing">
-            <path d="M-5,0 Q-2.5,-3.5 0,-0.8 Q2.5,-3.5 5,0" fill="none" stroke="#5a6672" stroke-width="1.2" stroke-linecap="round"/>
+            <use href="#bird2" transform="translate(0,104) scale(0.9)"/>
+            <use href="#bird2" transform="translate(19,114) scale(0.8)"/>
+            <use href="#bird2" transform="translate(36,100) scale(0.72)"/>
+            <use href="#bird2" transform="translate(52,112) scale(0.66)"/>
           </g></g>
           <g class="bird bird-3"><g class="wing">
-            <path d="M-4,0 Q-2,-2.9 0,-0.6 Q2,-2.9 4,0" fill="none" stroke="#66727e" stroke-width="1.1" stroke-linecap="round"/>
+            <use href="#bird2" transform="translate(0,142) scale(0.78)"/>
+            <use href="#bird2" transform="translate(16,134) scale(0.7)"/>
+            <use href="#bird2" transform="translate(31,146) scale(0.62)"/>
           </g></g>
         </g>
 
-        <!-- 큰 산 하나. 정상을 왼쪽으로 치우쳐 좌우를 다르게 둔다 -->
-        <path d="M-40,340
-                 C-26,300 -12,272 8,250
-                 C28,228 48,206 70,190
-                 C88,177 104,169 118,167
-                 C132,169 144,177 156,191
-                 C170,209 182,227 198,240
-                 C214,252 228,258 246,264
-                 C266,271 286,272 302,276
-                 C318,281 328,300 336,340 Z"
-              fill="#88a57e"/>
-        <!-- 능선을 비스듬히 두고 오른쪽에 그늘 -->
-        <path d="M118,167
-                 C128,230 138,288 148,340
-                 L336,340
-                 C328,300 318,281 302,276
-                 C286,272 266,271 246,264
-                 C228,258 214,252 198,240
-                 C182,227 170,209 156,191
-                 C144,177 132,169 118,167 Z"
-              fill="#7a9771"/>
-        <!-- 왼쪽 능선에 얹히는 빛 -->
-        <path d="M70,190 C88,177 104,169 118,167 C102,176 88,187 78,201 Z"
-              fill="#9cb493" opacity="0.5"/>
-        <!-- 골짜기 자국 -->
-        <g fill="none" stroke="#7b9873" stroke-width="1.6" stroke-linecap="round" opacity="0.5">
-          <path d="M94,194 C84,226 74,256 62,292"/>
-          <path d="M110,180 C106,216 100,252 92,296"/>
-        </g>
-        <g fill="none" stroke="#6f8b66" stroke-width="1.5" stroke-linecap="round" opacity="0.42">
-          <path d="M148,198 C162,226 178,252 198,278"/>
-          <path d="M238,272 C252,282 266,290 280,300"/>
+        <!-- ================= 겹겹이 물러나는 산 ================= -->
+        <path d="M-4,180 C18,166 36,154 58,160 C80,166 96,148 122,144
+                 C148,140 166,154 192,150 C220,146 240,158 262,152
+                 C280,147 292,154 304,150 L304,220 L-4,220 Z" fill="#9e93b6"/>
+        <path d="M-4,202 C16,192 38,182 62,188 C88,194 106,178 132,176
+                 C158,174 178,188 204,184 C230,180 252,190 274,186
+                 C288,183 296,188 304,185 L304,240 L-4,240 Z" fill="#ad9aad"/>
+        <!-- 단풍 든 앞산 -->
+        <path d="M-4,224 C20,212 46,204 74,210 C102,216 122,200 150,198
+                 C178,196 200,210 226,206 C252,202 276,212 304,206
+                 L304,270 L-4,270 Z" fill="#c08f57"/>
+        <!-- 앞산을 덮은 단풍 숲. 능선을 따라 덩어리로 얹는다 -->
+        <g>
+          <circle cx="8"   cy="222" r="11" fill="#c97a3e"/>
+          <circle cx="26"  cy="218" r="10" fill="#d99a49"/>
+          <circle cx="44"  cy="221" r="12" fill="#b4693a"/>
+          <circle cx="64"  cy="217" r="10" fill="#cf7440"/>
+          <circle cx="82"  cy="214" r="11" fill="#dba552"/>
+          <circle cx="102" cy="211" r="10" fill="#b4693a"/>
+          <circle cx="120" cy="207" r="11" fill="#c97a3e"/>
+          <circle cx="140" cy="204" r="10" fill="#a88a4a"/>
+          <circle cx="160" cy="203" r="11" fill="#cf7440"/>
+          <circle cx="180" cy="206" r="10" fill="#dba552"/>
+          <circle cx="200" cy="210" r="11" fill="#8d9a55"/>
+          <circle cx="220" cy="208" r="10" fill="#c97a3e"/>
+          <circle cx="240" cy="207" r="11" fill="#b4693a"/>
+          <circle cx="260" cy="210" r="10" fill="#dba552"/>
+          <circle cx="280" cy="212" r="11" fill="#cf7440"/>
+          <circle cx="298" cy="215" r="10" fill="#c97a3e"/>
+
+          <circle cx="16"  cy="236" r="10" fill="#b4693a" opacity="0.9"/>
+          <circle cx="54"  cy="234" r="11" fill="#a8783f" opacity="0.9"/>
+          <circle cx="94"  cy="228" r="10" fill="#c98b44" opacity="0.9"/>
+          <circle cx="134" cy="222" r="11" fill="#a8783f" opacity="0.9"/>
+          <circle cx="176" cy="223" r="10" fill="#b4693a" opacity="0.9"/>
+          <circle cx="216" cy="226" r="11" fill="#c98b44" opacity="0.9"/>
+          <circle cx="256" cy="227" r="10" fill="#a8783f" opacity="0.9"/>
+          <circle cx="292" cy="230" r="11" fill="#b4693a" opacity="0.9"/>
         </g>
 
-        <!-- 한옥. 정상 아래 오른쪽 비탈에, 산이 커 보이도록 조금 줄여 앉힌다 -->
-        <g transform="translate(186,290) scale(0.82) translate(-150,-278)">
-        <!-- 축대 터 -->
-        <path d="M96,278 C112,270 188,270 204,278 C188,285 112,285 96,278 Z" fill="#92ae88"/>
+        <!-- ================= 한옥이 앉은 언덕 ================= -->
+        <path d="M-4,258 C28,250 66,256 104,250 C142,244 178,254 218,248
+                 C254,243 280,250 304,246 L304,312 L-4,312 Z" fill="#cbb069"/>
+        <!-- 산자락 오솔길 -->
+        <path d="M-4,268 C26,260 50,266 72,260 C90,255 104,262 122,259"
+              stroke="#e6dab8" stroke-width="3.6" fill="none" stroke-linecap="round"/>
 
+        <!-- 뒤편 나무들 -->
+        <g class="sway" style="--dur:7.6s; --d:-2.2s"><use href="#tree-o" transform="translate(30,256) scale(0.74)"/></g>
+        <g class="sway" style="--dur:8.4s; --d:-0.7s"><use href="#tree-r" transform="translate(56,252) scale(0.66)"/></g>
+        <g class="sway" style="--dur:6.9s; --d:-3.6s"><use href="#tree-y" transform="translate(82,257) scale(0.7)"/></g>
+        <g class="sway" style="--dur:7.2s; --d:-1.4s"><use href="#pine2" transform="translate(106,254) scale(0.68)"/></g>
+        <g class="sway" style="--dur:8.1s; --d:-4.2s"><use href="#tree-o" transform="translate(230,251) scale(0.72)"/></g>
+        <g class="sway" style="--dur:7.4s; --d:-2.8s"><use href="#tree-r" transform="translate(258,256) scale(0.78)"/></g>
+        <g class="sway" style="--dur:6.6s; --d:-1.1s"><use href="#tree-y" transform="translate(286,252) scale(0.68)"/></g>
+
+        <!-- ================= 한옥 ================= -->
         <g class="hanok">
           <!-- 축대 -->
-          <rect x="114" y="272" width="72" height="5" rx="1" fill="#9c9484"/>
-          <!-- 벽체와 기둥 -->
-          <rect x="118" y="254" width="64" height="19" fill="#f1ebdf"/>
-          <rect x="126" y="259" width="16" height="14" fill="#7a6849"/>
-          <rect x="158" y="259" width="16" height="14" fill="#7a6849"/>
-          <g fill="#6d5c47">
-            <rect x="118" y="254" width="2.6" height="19"/>
-            <rect x="148.7" y="254" width="2.6" height="19"/>
-            <rect x="179.4" y="254" width="2.6" height="19"/>
+          <path d="M104,282 L196,282 L198,292 L102,292 Z" fill="#cdbfa6"/>
+          <path d="M104,282 L196,282 L196.6,285 L103.4,285 Z" fill="#dbcfb9"/>
+          <!-- 대청과 기둥 -->
+          <rect x="112" y="262" width="76" height="21" fill="#efe3c9"/>
+          <g fill="#8a6f47">
+            <rect x="119" y="266" width="17" height="17"/>
+            <rect x="141" y="266" width="17" height="17"/>
+            <rect x="163" y="266" width="17" height="17"/>
           </g>
-          <!-- 지붕: 낮고 넓게, 처마 끝이 살짝 들린다 -->
-          <path d="M100,252 C110,240 122,231 138,229 L162,229 C178,231 190,240 200,252 C180,259 120,259 100,252 Z"
-                fill="#5a6470"/>
-          <path d="M100,252 C120,259 180,259 200,252 L200,255 C180,262 120,262 100,255 Z" fill="#434c57"/>
+          <g fill="#9d8058">
+            <rect x="119" y="266" width="17" height="3"/>
+            <rect x="141" y="266" width="17" height="3"/>
+            <rect x="163" y="266" width="17" height="3"/>
+          </g>
+          <g fill="#7a6242">
+            <rect x="110.5" y="261" width="3.5" height="22"/>
+            <rect x="148.2" y="261" width="3.5" height="22"/>
+            <rect x="186" y="261" width="3.5" height="22"/>
+          </g>
+          <!-- 기와 지붕. 마루에서 곧게 내려오고 처마 끝만 살짝 들린다 -->
+          <path d="M92,259 L121,239 L179,239 L208,259 C182,267 118,267 92,259 Z" fill="#8e8b92"/>
+          <path d="M150,239 L179,239 L208,259 C192,264 172,266 150,266 Z" fill="#7e7b85"/>
+          <path d="M92,259 C118,267 182,267 208,259 L210,264 C184,273 116,273 90,264 Z" fill="#65626c"/>
+          <g stroke="#7e7b85" stroke-width="0.9" fill="none" opacity="0.5">
+            <path d="M127,242 L112,258"/>
+            <path d="M139,241 L132,260"/>
+            <path d="M150,240 L150,261"/>
+            <path d="M161,241 L168,260"/>
+            <path d="M173,242 L188,258"/>
+          </g>
           <!-- 용마루 -->
-          <path d="M124,229 L176,229 L173,225 L127,225 Z" fill="#3c454f"/>
-        </g>
-        </g>
-
-        <!-- 산비탈 위쪽 나무들 — 작게 두어 거리를 준다 -->
-        <g class="sway" style="--dur:8.6s; --d:-1.1s"><use href="#pine" transform="translate(96,210) scale(0.46)"/></g>
-        <g class="sway" style="--dur:7.4s; --d:-3.3s"><use href="#pine" transform="translate(70,248) scale(0.6)"/></g>
-        <g class="sway" style="--dur:9.1s; --d:-2.0s"><use href="#pine" transform="translate(146,224) scale(0.52)"/></g>
-        <g class="sway" style="--dur:7.9s; --d:-1.7s"><use href="#pine" transform="translate(44,280) scale(0.72)"/></g>
-        <g class="sway" style="--dur:8.8s; --d:-3.9s"><use href="#pine" transform="translate(252,272) scale(0.62)"/></g>
-        <g class="sway" style="--dur:8.0s; --d:-4.4s"><use href="#pine" transform="translate(172,208) scale(0.42)"/></g>
-
-        <!-- 산자락의 나무들 -->
-        <g class="sway" style="--dur:6.6s; --d:-0.4s"><use href="#pine" transform="translate(28,300)"/></g>
-        <g class="sway" style="--dur:7.8s; --d:-2.6s"><use href="#pine" transform="translate(58,306) scale(0.82)"/></g>
-        <g class="sway" style="--dur:6.1s; --d:-3.4s"><use href="#pine" transform="translate(284,300)"/></g>
-        <g class="sway" style="--dur:7.1s; --d:-1.2s"><use href="#pine" transform="translate(120,304) scale(0.76)"/></g>
-
-        <g class="sway" style="--dur:7.2s; --d:-1.5s">
-          <path d="M248,302 L248,290" stroke="#6b5a45" stroke-width="1.6" stroke-linecap="round"/>
-          <circle cx="248" cy="284" r="8.4" fill="#c9884a"/>
-          <circle cx="242" cy="289" r="5.4" fill="#d89a58"/>
-          <circle cx="254" cy="289" r="4.8" fill="#bd7c41"/>
-        </g>
-        <g class="sway" style="--dur:8.4s; --d:-0.9s">
-          <path d="M88,304 L88,293" stroke="#6b5a45" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="88" cy="288" r="7.6" fill="#8fa859"/>
-          <circle cx="83" cy="292" r="5" fill="#9cb463"/>
-        </g>
-        <g class="sway" style="--dur:6.9s; --d:-4.1s">
-          <path d="M152,306 L152,296" stroke="#6b5a45" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="152" cy="291" r="6.8" fill="#b8703c"/>
-          <circle cx="157" cy="295" r="4.4" fill="#c9834a"/>
+          <path d="M118,239 L182,239 L179,234 L121,234 Z" fill="#5c5964"/>
+          <!-- 마당을 두르는 담장. 집에 붙여 둔다 -->
+          <path d="M78,292 L104,292 L104,282 L78,282 Z" fill="#dccdae"/>
+          <path d="M76,282 L106,282 L106,278.5 L76,278.5 Z" fill="#7e7b85"/>
+          <path d="M196,292 L222,292 L222,282 L196,282 Z" fill="#dccdae"/>
+          <path d="M194,282 L224,282 L224,278.5 L194,278.5 Z" fill="#7e7b85"/>
         </g>
 
-        <!-- 텃밭. 집을 아래로 내린 만큼 높이를 줄인다 -->
-        <path d="M0,314 C50,304 110,317 160,310 C210,304 262,314 300,307 L300,384 L0,384 Z"
-              fill="url(#field)"/>
-        <g fill="none" stroke="#ab9f6c" opacity="0.5" stroke-linecap="round">
-          <path d="M0,326 C50,316 110,329 160,322 C210,316 262,326 300,319" stroke-width="2"/>
-          <path d="M0,340 C50,330 110,343 160,336 C210,330 262,340 300,333" stroke-width="2.4"/>
-          <path d="M0,354 C50,344 110,357 160,350 C210,344 262,354 300,347" stroke-width="2.8"/>
-          <path d="M0,370 C50,360 110,373 160,366 C210,360 262,370 300,363" stroke-width="3.2"/>
+        <!-- 집 둘레의 큰 단풍나무 -->
+        <g class="sway" style="--dur:6.8s; --d:-0.4s"><use href="#tree-o" transform="translate(122,244) scale(1.04)"/></g>
+        <g class="sway" style="--dur:7.9s; --d:-2.5s"><use href="#tree-r" transform="translate(182,242) scale(0.94)"/></g>
+        <g class="sway" style="--dur:7.1s; --d:-3.9s"><use href="#tree-y" transform="translate(212,268) scale(0.84)"/></g>
+        <g class="sway" style="--dur:6.4s; --d:-1.8s"><use href="#pine2" transform="translate(92,290) scale(0.86)"/></g>
+        <g class="sway" style="--dur:8.2s; --d:-0.9s"><use href="#tree-o" transform="translate(252,284) scale(0.9)"/></g>
+        <g class="sway" style="--dur:7.0s; --d:-4.6s"><use href="#tree-r" transform="translate(26,288) scale(0.88)"/></g>
+
+        <!-- ================= 다랑논 ================= -->
+        <path d="M-4,300 C36,292 84,302 132,296 C180,290 232,300 304,292 L304,342 L-4,342 Z"
+              fill="url(#paddy)"/>
+        <g fill="none" stroke="#bfa558" stroke-width="1.2" opacity="0.7">
+          <path d="M-4,312 C36,304 84,314 132,308 C180,302 232,312 304,304"/>
+          <path d="M-4,327 C36,319 84,329 132,323 C180,317 232,327 304,319"/>
+        </g>
+
+        <!-- ================= 텃밭 ================= -->
+        <path d="M-4,320 C30,314 74,324 118,318 C150,314 168,320 190,317 L188,358 L-4,358 Z"
+              fill="#c9b168"/>
+        <g fill="none" stroke="#ab9249" stroke-width="1.8" opacity="0.65">
+          <path d="M-4,331 C30,325 74,335 116,329"/>
+          <path d="M-4,344 C30,338 72,348 112,342"/>
         </g>
 
         <g class="crops">
-          <g class="sway" style="--dur:3.4s; --d:-0.1s"><use href="#sprout" transform="translate(24,325) scale(0.8)"/></g>
-          <g class="sway" style="--dur:3.9s; --d:-1.2s"><use href="#sprout" transform="translate(82,321) scale(0.8)"/></g>
-          <g class="sway" style="--dur:3.2s; --d:-0.7s"><use href="#sprout" transform="translate(142,324) scale(0.8)"/></g>
-          <g class="sway" style="--dur:4.1s; --d:-1.9s"><use href="#sprout" transform="translate(204,319) scale(0.8)"/></g>
-          <g class="sway" style="--dur:3.6s; --d:-2.4s"><use href="#sprout" transform="translate(264,321) scale(0.8)"/></g>
+          <g class="sway" style="--dur:3.4s; --d:-0.1s"><use href="#cabbage" transform="translate(10,330) scale(0.86)"/></g>
+          <g class="sway" style="--dur:3.9s; --d:-1.2s"><use href="#cabbage" transform="translate(34,327) scale(0.86)"/></g>
+          <g class="sway" style="--dur:3.2s; --d:-0.7s"><use href="#cabbage" transform="translate(58,331) scale(0.86)"/></g>
+          <g class="sway" style="--dur:4.1s; --d:-1.9s"><use href="#cabbage" transform="translate(82,333) scale(0.86)"/></g>
+          <g class="sway" style="--dur:3.6s; --d:-2.4s"><use href="#cabbage" transform="translate(106,330) scale(0.86)"/></g>
 
-          <g class="sway" style="--dur:3.7s; --d:-0.5s"><use href="#sprout" transform="translate(46,339) scale(0.92)"/></g>
-          <g class="sway" style="--dur:3.1s; --d:-1.6s"><use href="#sprout" transform="translate(108,342) scale(0.92)"/></g>
-          <g class="sway" style="--dur:4.2s; --d:-0.2s"><use href="#sprout" transform="translate(170,336) scale(0.92)"/></g>
-          <g class="sway" style="--dur:3.5s; --d:-2.2s"><use href="#sprout" transform="translate(232,338) scale(0.92)"/></g>
-          <g class="sway" style="--dur:3.9s; --d:-1.1s"><use href="#sprout" transform="translate(288,334) scale(0.92)"/></g>
-
-          <g class="sway" style="--dur:3.3s; --d:-1.8s"><use href="#sprout" transform="translate(20,354) scale(1.04)"/></g>
-          <g class="sway" style="--dur:4.0s; --d:-0.6s"><use href="#sprout" transform="translate(84,357) scale(1.04)"/></g>
-          <g class="sway" style="--dur:3.6s; --d:-2.7s"><use href="#sprout" transform="translate(150,350) scale(1.04)"/></g>
-          <g class="sway" style="--dur:3.2s; --d:-1.3s"><use href="#sprout" transform="translate(216,352) scale(1.04)"/></g>
-          <g class="sway" style="--dur:4.1s; --d:-0.4s"><use href="#sprout" transform="translate(278,348) scale(1.04)"/></g>
-
-          <g class="sway" style="--dur:3.8s; --d:-2.1s"><use href="#sprout" transform="translate(54,364) scale(1.16)"/></g>
-          <g class="sway" style="--dur:3.4s; --d:-0.9s"><use href="#sprout" transform="translate(128,371) scale(1.16)"/></g>
-          <g class="sway" style="--dur:4.2s; --d:-1.7s"><use href="#sprout" transform="translate(202,366) scale(1.16)"/></g>
-          <g class="sway" style="--dur:3.5s; --d:-0.3s"><use href="#sprout" transform="translate(270,369) scale(1.16)"/></g>
+          <g class="sway" style="--dur:3.7s; --d:-0.5s"><use href="#cabbage" transform="translate(16,345)"/></g>
+          <g class="sway" style="--dur:3.1s; --d:-1.6s"><use href="#cabbage" transform="translate(44,347)"/></g>
+          <g class="sway" style="--dur:4.2s; --d:-0.2s"><use href="#cabbage" transform="translate(72,349)"/></g>
+          <g class="sway" style="--dur:3.5s; --d:-2.2s"><use href="#cabbage" transform="translate(100,346)"/></g>
         </g>
 
-        <!-- 개울 -->
-        <path d="M0,372 C50,364 110,378 160,372 C212,366 262,376 300,370 L300,450 L0,450 Z"
+        <!-- 텃밭 끝의 배추 두 포기 -->
+        <g class="crops">
+          <g class="sway" style="--dur:3.3s; --d:-0.8s"><use href="#cabbage" transform="translate(130,338) scale(0.95)"/></g>
+          <g class="sway" style="--dur:3.8s; --d:-1.9s"><use href="#cabbage" transform="translate(158,341) scale(0.95)"/></g>
+        </g>
+
+        <!-- 나무 울타리 -->
+        <g fill="#c9a877">
+          <path d="M6,354 L12,354 L12,337 L9,333 L6,337 Z"/>
+          <path d="M22,355 L28,355 L28,338 L25,334 L22,338 Z"/>
+          <path d="M38,356 L44,356 L44,339 L41,335 L38,339 Z"/>
+          <path d="M54,357 L60,357 L60,340 L57,336 L54,340 Z"/>
+          <path d="M70,358 L76,358 L76,341 L73,337 L70,341 Z"/>
+          <path d="M86,358 L92,358 L92,341 L89,337 L86,341 Z"/>
+          <path d="M102,359 L108,359 L108,342 L105,338 L102,342 Z"/>
+        </g>
+        <g stroke="#b08f5e" stroke-width="2.6" fill="none" stroke-linecap="round">
+          <path d="M4,343 C34,344 78,346 110,348"/>
+          <path d="M4,353 C34,354 78,356 110,358"/>
+        </g>
+
+        <!-- 개울로 내려가는 길 -->
+        <path d="M212,316 C209,330 204,346 197,360" stroke="#e6dab8" stroke-width="7"
+              fill="none" stroke-linecap="round"/>
+
+        <!-- ================= 개울 ================= -->
+        <path d="M-10,378 C50,368 110,360 170,350 C220,342 266,336 310,332 L310,460 L-10,460 Z"
               fill="url(#water)"/>
 
         <g clip-path="url(#clipWater)">
-          <g class="ripple" style="--d:0s" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round">
-            <path d="M28,392 q9,-3.2 18,0"/><path d="M126,400 q10,-3.2 20,0"/><path d="M236,388 q9,-3.2 18,0"/>
-          </g>
-          <g class="ripple" style="--d:-2s" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round">
-            <path d="M64,414 q8,-3 16,0"/><path d="M174,408 q9,-3 18,0"/><path d="M266,418 q8,-3 16,0"/>
-          </g>
-          <g class="ripple" style="--d:-4s" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round">
-            <path d="M12,434 q9,-3 18,0"/><path d="M118,440 q9,-3 18,0"/><path d="M224,432 q8,-3 16,0"/>
+          <!-- 바닥의 조약돌 -->
+          <g opacity="0.55">
+            <use href="#pebble" transform="translate(28,392)"/>
+            <use href="#pebble" transform="translate(52,402) scale(0.8)"/>
+            <use href="#pebble" transform="translate(84,388) scale(1.1)"/>
+            <use href="#pebble" transform="translate(112,400) scale(0.9)"/>
+            <use href="#pebble" transform="translate(146,382) scale(0.85)"/>
+            <use href="#pebble" transform="translate(178,394) scale(1.05)"/>
+            <use href="#pebble" transform="translate(214,376) scale(0.8)"/>
+            <use href="#pebble" transform="translate(246,386) scale(0.95)"/>
+            <use href="#pebble" transform="translate(276,370) scale(0.8)"/>
+            <use href="#pebble" transform="translate(16,424) scale(1.15)"/>
+            <use href="#pebble" transform="translate(64,436) scale(0.9)"/>
+            <use href="#pebble" transform="translate(124,430) scale(1.05)"/>
+            <use href="#pebble" transform="translate(196,440) scale(0.85)"/>
+            <use href="#pebble" transform="translate(262,428) scale(1)"/>
           </g>
 
-          <g class="fish fish-1"><g class="bob"><use href="#fish" transform="translate(0,396)"/></g></g>
-          <g class="fish fish-2"><g class="bob"><use href="#fish" transform="translate(0,420) scale(0.78)"/></g></g>
-          <g class="fish fish-3"><g class="bob"><use href="#fish" transform="translate(0,438) scale(1.1)"/></g></g>
+          <!-- 물결 -->
+          <g class="ripple" style="--d:0s" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.85">
+            <path d="M-20,396 C24,388 76,378 128,370"/>
+            <path d="M84,418 C130,410 182,400 232,392"/>
+            <path d="M176,362 C212,356 250,350 288,346"/>
+          </g>
+          <g class="ripple" style="--d:-2s" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+            <path d="M-10,424 C36,416 90,404 140,394"/>
+            <path d="M150,404 C192,396 238,388 282,382"/>
+            <path d="M40,444 C86,436 136,426 186,416"/>
+          </g>
+          <g class="ripple" style="--d:-4s" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.75">
+            <path d="M-16,410 C30,402 82,392 132,382"/>
+            <path d="M120,440 C168,432 218,422 266,412"/>
+            <path d="M210,392 C246,386 280,380 308,376"/>
+          </g>
+
+          <!-- 물고기 -->
+          <g class="fish fish-1"><g class="bob"><use href="#fish2" transform="translate(0,404)"/></g></g>
+          <g class="fish fish-2"><g class="bob"><use href="#fish2" transform="translate(0,432) scale(0.82)"/></g></g>
+          <g class="fish fish-3"><g class="bob"><use href="#fish2" transform="translate(0,386) scale(0.72)"/></g></g>
         </g>
 
-        <!-- 개울가 풀 -->
+        <!-- ================= 개울가 ================= -->
+        <g fill="#c2b49e">
+          <path d="M238,362 C242,354 254,354 258,360 C260,366 250,370 242,368 Z"/>
+          <path d="M6,398 C10,390 22,390 26,396 C28,403 16,407 8,404 Z"/>
+        </g>
+
         <g class="bank">
-          <g class="sway" style="--dur:2.9s; --d:-0.3s">
-            <path d="M16,376 C15,368 18,363 20,359" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <path d="M21,377 C22,369 20,364 18,360" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <path d="M26,377 C27,370 26,366 25,363" stroke="#6f9a58" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-          </g>
-          <g class="sway" style="--dur:3.4s; --d:-1.4s">
-            <path d="M104,382 C103,374 106,369 108,365" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <path d="M109,383 C110,375 108,370 106,366" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </g>
-          <g class="sway" style="--dur:3.1s; --d:-2.2s">
-            <path d="M204,376 C203,368 206,363 208,359" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <path d="M209,377 C210,369 208,364 206,360" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <path d="M214,377 C215,370 214,366 213,363" stroke="#6f9a58" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-          </g>
-          <g class="sway" style="--dur:2.7s; --d:-0.9s">
-            <path d="M282,374 C281,366 284,361 286,357" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <path d="M287,375 C288,367 286,362 284,358" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </g>
+          <g class="sway" style="--dur:2.9s; --d:-0.3s"><use href="#tuft" transform="translate(14,380) scale(1.1)"/></g>
+          <g class="sway" style="--dur:3.4s; --d:-1.4s"><use href="#tuft" transform="translate(48,374)"/></g>
+          <g class="sway" style="--dur:3.1s; --d:-2.2s"><use href="#tuft" transform="translate(88,368) scale(0.95)"/></g>
+          <g class="sway" style="--dur:2.7s; --d:-0.9s"><use href="#tuft" transform="translate(132,360) scale(0.9)"/></g>
+          <g class="sway" style="--dur:3.6s; --d:-1.8s"><use href="#tuft" transform="translate(178,351) scale(0.85)"/></g>
+          <g class="sway" style="--dur:3.0s; --d:-3.1s"><use href="#tuft" transform="translate(226,343) scale(0.8)"/></g>
+          <g class="sway" style="--dur:3.3s; --d:-0.6s"><use href="#tuft" transform="translate(272,337) scale(0.75)"/></g>
         </g>
       </svg>
     </figure>

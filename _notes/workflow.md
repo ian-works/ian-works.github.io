@@ -94,6 +94,21 @@ SPA라 `curl` 이나 단순 fetch로는 **본문이 비어서** 옵니다. 텍�
 봇 차단이 강합니다. 표지 이미지는 페이지를 긁지 말고 ASIN 기반 CDN 패턴을
 쓰세요 — `https://images-na.ssl-images-amazon.com/images/P/<ASIN>.01._SCLZZZZZZZ_.jpg`
 
+### 애플 터치 아이콘 다시 만들기
+
+`assets/apple-touch-icon.png` 는 `assets/favicon.svg` 를 180px로 렌더링한
+것입니다. 파비콘을 고쳤으면 아래로 다시 뽑으세요.
+
+```sh
+cat > /tmp/icon.html <<'EOF'
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<style>html,body{margin:0;padding:0}img{display:block;width:180px;height:180px}</style>
+</head><body><img src="http://127.0.0.1:8777/assets/favicon.svg"></body></html>
+EOF
+"$CHROME" --headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=4000 \
+  --window-size=180,180 --screenshot=assets/apple-touch-icon.png "file:///tmp/icon.html"
+```
+
 ### BlueArgos 앱 아이콘
 
 검은 배경 위에 파란 링이 발광하는 그림입니다(투명 배경 아님). 밝은 배경에

@@ -85,8 +85,10 @@
 - AI 기반 카메라 데이터 전처리 — 특허 출원 중
 - 데이터 출처: 경찰청 · 공공데이터포털(data.go.kr), 공공누리 제1유형(출처표시)
 - iOS / Android 모두, 테스터 모집 중
-- 앱 아이콘은 `assets/blue-argos-icon.png` 에 사본이 있습니다(검은 배경 위
-  파란 링). 밝은 배경에 올릴 때는 둥근 타일로 감싸야 자연스럽습니다.
+- 앱 아이콘(검은 배경 위 파란 링)이 필요하면
+  `https://ian-works.github.io/blue-argos/assets/app_icon.png` 에서 받으세요.
+  밝은 배경에 올릴 때는 둥근 타일로 감싸야 자연스럽습니다.
+  (이 사이트에 두었던 사본은 쓰지 않게 되어 지웠습니다)
 
 ## Web Service — Save my time
 

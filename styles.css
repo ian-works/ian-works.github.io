@@ -206,8 +206,8 @@ a:hover { text-decoration-color: currentColor; }
 .scene .cloud-3 { animation-duration: 168s; animation-delay: -42s; }
 
 @keyframes drift {
-  from { transform: translateX(-60px); }
-  to   { transform: translateX(360px); }
+  from { transform: translateX(-80px); }
+  to   { transform: translateX(384px); }
 }
 
 /* 새 — 가로지르며 날갯짓 */
@@ -216,9 +216,10 @@ a:hover { text-decoration-color: currentColor; }
 .scene .bird-2 { animation-duration: 44s; animation-delay: -19s; }
 .scene .bird-3 { animation-duration: 52s; animation-delay: -31s; }
 
+/* 새는 무리 안에 이미 제자리가 있으니 여기서는 가로로 쓸어 가며 살짝 올라간다 */
 @keyframes fly {
-  from { transform: translate(-30px, 150px); }
-  to   { transform: translate(330px, 84px); }
+  from { transform: translate(-72px, 18px); }
+  to   { transform: translate(344px, -20px); }
 }
 
 .scene .wing {
