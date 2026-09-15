@@ -94,6 +94,59 @@ SPA라 `curl` 이나 단순 fetch로는 **본문이 비어서** 옵니다. 텍�
 봇 차단이 강합니다. 표지 이미지는 페이지를 긁지 말고 ASIN 기반 CDN 패턴을
 쓰세요 — `https://images-na.ssl-images-amazon.com/images/P/<ASIN>.01._SCLZZZZZZZ_.jpg`
 
+### OG 이미지(링크 미리보기) 다시 만들기
+
+`assets/og.png` 는 1200×630 카드입니다. 왼쪽에 이름과 한 줄, 오른쪽에 풍경
+SVG를 넣은 — 사이트 레이아웃을 그대로 줄인 모양입니다. 풍경이나 문구를
+고쳤으면 다시 뽑으세요.
+
+아래 스크립트가 `index.html` 에서 풍경 SVG를, `styles.css` 에서 토큰을
+가져와 카드를 조립합니다. **정지 화면이라 `animation-delay` 를 고정**해
+구름·새·물고기가 보기 좋은 자리에 오게 합니다.
+
+```sh
+python3 - <<'PY'
+import re
+html = open('index.html', encoding='utf-8').read()
+svg  = re.search(r'<svg class="scene".*?</svg>', html, re.S).group(0)
+css  = open('styles.css', encoding='utf-8').read()
+open('/tmp/og.html','w',encoding='utf-8').write(f"""<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&display=swap">
+<style>{css}
+html,body{{margin:0;background:#f7f7f4}}
+.og{{width:1200px;height:630px;box-sizing:border-box;display:flex;align-items:center;
+     justify-content:space-between;gap:56px;padding:0 76px;background:#f7f7f4;font-family:var(--font-serif)}}
+.og-text{{flex:1 1 auto;min-width:0;max-width:560px}}
+.og-name{{font-size:88px;font-weight:700;letter-spacing:-0.03em;line-height:1;color:#16161e;margin:0 0 32px}}
+.og-line{{font-size:31px;line-height:1.6;color:#4d4d55;margin:0;word-break:keep-all}}
+.og-kinds{{font-size:24px;color:#86868d;margin:22px 0 0}}
+.og-url{{font-family:var(--font-ui);font-size:22px;color:#86868d;margin:38px 0 0}}
+.og-art{{width:372px;flex:none;border-radius:20px;overflow:hidden}}
+.og-art .scene{{display:block;width:100%;height:auto}}
+.scene .cloud-1{{animation-delay:-34s!important}} .scene .cloud-2{{animation-delay:-92s!important}}
+.scene .cloud-3{{animation-delay:-96s!important}} .scene .bird-1{{animation-delay:-14s!important}}
+.scene .bird-2{{animation-delay:-24s!important}}  .scene .bird-3{{animation-delay:-34s!important}}
+.scene .fish-1{{animation-delay:-11s!important}}  .scene .fish-2{{animation-delay:-22s!important}}
+.scene .fish-3{{animation-delay:-8s!important}}
+</style></head><body><div class="og"><div class="og-text">
+<p class="og-name">Ian Lee</p>
+<p class="og-line">사람들에게 편리하고 이로운 무언가를 만드는 걸 좋아합니다.</p>
+<p class="og-kinds">저서 · 앱 · 웹 서비스</p>
+<p class="og-url">ian-works.github.io</p>
+</div><figure class="og-art">{svg}</figure></div></body></html>""")
+PY
+
+# 웹폰트를 받아야 하므로 서버로 띄워서 찍는다
+cp /tmp/og.html . && python3 -m http.server 8778 &
+"$CHROME" --headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=10000 \
+  --window-size=1200,630 --screenshot=assets/og.png "http://127.0.0.1:8778/og.html"
+rm og.html
+```
+
+**메신저·SNS는 미리보기를 캐시합니다.** 이미지를 바꿔도 예전 것이 한동안
+보입니다. 파일 이름을 바꾸거나(`og-2.png`) 각 플랫폼의 디버거에서 갱신을
+요청하세요. 카카오톡은 캐시가 길어 며칠 갈 수 있습니다.
+
 ### 애플 터치 아이콘 다시 만들기
 
 `assets/apple-touch-icon.png` 는 `assets/favicon.svg` 를 180px로 렌더링한
