@@ -3,299 +3,345 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ian Lee — 만드는 것들</title>
-<meta name="description" content="Ian Lee의 포트폴리오. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
+<title>Ian Lee</title>
+<meta name="description" content="보안 소프트웨어를 만드는 개발자 Ian Lee. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
 <meta name="author" content="Ian Lee">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a18" media="(prefers-color-scheme: dark)">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ian-works.github.io/">
-<meta property="og:title" content="Ian Lee — 만드는 것들">
-<meta property="og:description" content="보안 소프트웨어 개발자이자 저자. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
+<meta property="og:title" content="Ian Lee">
+<meta property="og:description" content="보안 소프트웨어를 만드는 개발자. 리눅스 백신 개발 저서, BlueArgos 앱, 그리고 만들고 있는 것들.">
 <meta property="og:image" content="https://ian-works.github.io/assets/book-ko-2023.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/blue-argos-icon.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<div class="page">
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#top" aria-label="Ian Lee 홈">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-text">ian<span class="brand-dim">.works</span></span>
-    </a>
-    <nav class="nav-links" aria-label="주요 섹션">
-      <a href="#about">소개</a>
-      <a href="#books">저서</a>
-      <a href="#apps">앱</a>
-      <a href="#services">웹 서비스</a>
-    </nav>
-  </div>
-</header>
+  <!-- ==================== 머리말 ==================== -->
+  <header class="intro">
+    <h1>Ian Lee</h1>
+    <p class="handle"><a href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">@ian-works</a></p>
 
-<main id="main">
+    <p class="lede">
+      보안 소프트웨어를 만드는 개발자입니다. 안랩에서 10년간 PC용 V3 방화벽과
+      침입차단 시스템 엔진, 웹 보안 솔루션을 개발했고, 지금은 삼성전자에서 일합니다.
+    </p>
+    <p class="lede">
+      악성코드를 걸러내는 엔진부터 커널을 건드리는 방어 계층까지, 눈에 잘 보이지 않는
+      자리에서 동작하는 소프트웨어를 오래 다뤘습니다. 요즘 관심은 하나입니다 —
+      기존에 없던 편리한 무언가를 만드는 것. 이미 있는 것을 조금 낫게 만드는 일보다,
+      아직 아무도 만들지 않아서 모두가 불편을 감수하고 있는 지점을 찾는 쪽이 재미있습니다.
+    </p>
+  </header>
 
-  <!-- ==================== HERO ==================== -->
-  <section class="hero" id="top">
-    <div class="hero-rings" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Security Software Engineer &middot; Author &middot; Maker</p>
-      <h1 class="hero-title">Ian&nbsp;Lee</h1>
-      <p class="hero-lead">기존에 없던 <em>편리한 무언가</em>를 만듭니다.</p>
-      <p class="hero-sub">
-        안랩에서 10년간 보안 솔루션을 개발했고, 지금은 삼성전자에서 개발자로 일합니다.
-        그 사이사이에 책을 쓰고, 앱을 만들고, 아직 세상에 없는 도구를 궁리합니다.
+  <!-- ==================== 오른쪽 풍경 ==================== -->
+  <aside class="art">
+    <figure class="scene-wrap">
+      <svg class="scene" viewBox="0 0 300 450" role="img"
+           aria-label="산 중턱에 한옥 한 채가 있고, 그 앞으로 텃밭과 개울이 흐르는 가을 풍경. 바람에 풀과 나무가 흔들리고, 개울에는 물고기가, 하늘에는 뭉게구름과 새가 지나갑니다.">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5eb0dd"/>
+            <stop offset="0.45" stop-color="#9fd2ec"/>
+            <stop offset="1" stop-color="#dcf0f8"/>
+          </linearGradient>
+          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#6cb4d6"/>
+            <stop offset="1" stop-color="#abdaeb"/>
+          </linearGradient>
+          <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b3ae74"/>
+            <stop offset="1" stop-color="#d2ca96"/>
+          </linearGradient>
+
+          <clipPath id="clipSky"><rect x="0" y="0" width="300" height="215"/></clipPath>
+          <clipPath id="clipWater">
+            <path d="M0,372 C50,364 110,378 160,372 C212,366 262,376 300,370 L300,450 L0,450 Z"/>
+          </clipPath>
+
+          <!-- 텃밭 모종 한 포기 — 잎이 낮게 퍼진 모양 -->
+          <g id="sprout">
+            <ellipse cx="-2.9" cy="-1.5" rx="3.3" ry="1.9" fill="#6fa055"/>
+            <ellipse cx="2.9" cy="-1.5" rx="3.3" ry="1.9" fill="#7cae5f"/>
+            <ellipse cx="0" cy="-3.3" rx="2.7" ry="2.1" fill="#86ba68"/>
+          </g>
+
+          <!-- 소나무 -->
+          <g id="pine">
+            <path d="M0,0 L0,-12" stroke="#6b5a45" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M0,-24 L-7,-9 L7,-9 Z" fill="#54804f"/>
+            <path d="M0,-17 L-9,-3 L9,-3 Z" fill="#628f5b"/>
+          </g>
+
+          <!-- 물고기 -->
+          <g id="fish">
+            <path d="M0,0 C4,-3.4 11,-3.4 15,0 C11,3.4 4,3.4 0,0 Z" fill="#e0904a"/>
+            <path d="M0,0 L-5.5,-3.4 L-5.5,3.4 Z" fill="#d1782c"/>
+            <circle cx="11" cy="-0.9" r="0.8" fill="#3d3024"/>
+          </g>
+        </defs>
+
+        <!-- 하늘 -->
+        <rect x="0" y="0" width="300" height="450" fill="url(#sky)"/>
+
+        <g clip-path="url(#clipSky)">
+          <!-- 뭉게구름 -->
+          <g class="cloud cloud-1" fill="#ffffff" opacity="0.95">
+            <ellipse cx="0" cy="58" rx="27" ry="13"/>
+            <ellipse cx="-19" cy="63" rx="18" ry="10"/>
+            <ellipse cx="19" cy="63" rx="20" ry="11"/>
+            <ellipse cx="3" cy="48" rx="16" ry="12"/>
+            <ellipse cx="-9" cy="51" rx="12" ry="9"/>
+          </g>
+          <g class="cloud cloud-2" fill="#ffffff" opacity="0.82">
+            <ellipse cx="0" cy="118" rx="21" ry="9"/>
+            <ellipse cx="-15" cy="122" rx="14" ry="7"/>
+            <ellipse cx="15" cy="122" rx="15" ry="8"/>
+            <ellipse cx="2" cy="110" rx="12" ry="8"/>
+          </g>
+          <g class="cloud cloud-3" fill="#ffffff" opacity="0.7">
+            <ellipse cx="0" cy="24" rx="17" ry="7"/>
+            <ellipse cx="-12" cy="27" rx="11" ry="6"/>
+            <ellipse cx="12" cy="27" rx="12" ry="6"/>
+          </g>
+
+          <!-- 새 -->
+          <g class="bird bird-1"><g class="wing">
+            <path d="M-6,0 Q-3,-4.2 0,-1 Q3,-4.2 6,0" fill="none" stroke="#4e5a66" stroke-width="1.4" stroke-linecap="round"/>
+          </g></g>
+          <g class="bird bird-2"><g class="wing">
+            <path d="M-5,0 Q-2.5,-3.5 0,-0.8 Q2.5,-3.5 5,0" fill="none" stroke="#5a6672" stroke-width="1.2" stroke-linecap="round"/>
+          </g></g>
+          <g class="bird bird-3"><g class="wing">
+            <path d="M-4,0 Q-2,-2.9 0,-0.6 Q2,-2.9 4,0" fill="none" stroke="#66727e" stroke-width="1.1" stroke-linecap="round"/>
+          </g></g>
+        </g>
+
+        <!-- 먼 산 -->
+        <path d="M0,212 L30,178 L56,196 L92,156 L124,190 L156,166 L190,198 L224,168 L258,200 L300,178 L300,280 L0,280 Z"
+              fill="#a5c1d3"/>
+        <path d="M92,156 L108,176 L76,176 Z" fill="#cfe2ec" opacity="0.8"/>
+        <path d="M224,168 L238,186 L210,186 Z" fill="#cfe2ec" opacity="0.75"/>
+
+        <!-- 가운데 산 -->
+        <path d="M0,240 L34,214 L70,234 L104,204 L140,232 L176,210 L212,236 L250,212 L300,234 L300,300 L0,300 Z"
+              fill="#92ad9b"/>
+
+        <!-- 한옥이 앉은 산등성이 -->
+        <path d="M0,274 C40,262 82,270 120,264 C158,258 196,268 238,261 C266,256 284,262 300,259 L300,330 L0,330 Z"
+              fill="#7d9c6e"/>
+
+        <!-- 산 중턱의 한옥 -->
+        <g class="hanok">
+          <!-- 축대 -->
+          <rect x="114" y="272" width="72" height="5" rx="1" fill="#9c9484"/>
+          <!-- 벽체와 기둥 -->
+          <rect x="118" y="254" width="64" height="19" fill="#f1ebdf"/>
+          <rect x="126" y="259" width="16" height="14" fill="#7a6849"/>
+          <rect x="158" y="259" width="16" height="14" fill="#7a6849"/>
+          <g fill="#6d5c47">
+            <rect x="118" y="254" width="2.6" height="19"/>
+            <rect x="148.7" y="254" width="2.6" height="19"/>
+            <rect x="179.4" y="254" width="2.6" height="19"/>
+          </g>
+          <!-- 지붕: 낮고 넓게, 처마 끝이 살짝 들린다 -->
+          <path d="M100,252 C110,240 122,231 138,229 L162,229 C178,231 190,240 200,252 C180,259 120,259 100,252 Z"
+                fill="#5a6470"/>
+          <path d="M100,252 C120,259 180,259 200,252 L200,255 C180,262 120,262 100,255 Z" fill="#434c57"/>
+          <!-- 용마루 -->
+          <path d="M124,229 L176,229 L173,225 L127,225 Z" fill="#3c454f"/>
+        </g>
+
+        <!-- 산자락의 나무들 -->
+        <g class="sway" style="--dur:6.6s; --d:-0.4s"><use href="#pine" transform="translate(40,288)"/></g>
+        <g class="sway" style="--dur:7.8s; --d:-2.6s"><use href="#pine" transform="translate(68,294) scale(0.82)"/></g>
+        <g class="sway" style="--dur:6.1s; --d:-3.4s"><use href="#pine" transform="translate(256,286)"/></g>
+        <g class="sway" style="--dur:7.1s; --d:-1.2s"><use href="#pine" transform="translate(232,292) scale(0.76)"/></g>
+
+        <g class="sway" style="--dur:7.2s; --d:-1.5s">
+          <path d="M206,290 L206,278" stroke="#6b5a45" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="206" cy="272" r="8.4" fill="#c9884a"/>
+          <circle cx="200" cy="277" r="5.4" fill="#d89a58"/>
+          <circle cx="212" cy="277" r="4.8" fill="#bd7c41"/>
+        </g>
+        <g class="sway" style="--dur:8.4s; --d:-0.9s">
+          <path d="M102,292 L102,281" stroke="#6b5a45" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="102" cy="276" r="7.6" fill="#8fa859"/>
+          <circle cx="97" cy="280" r="5" fill="#9cb463"/>
+        </g>
+        <g class="sway" style="--dur:6.9s; --d:-4.1s">
+          <path d="M282,294 L282,284" stroke="#6b5a45" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="282" cy="279" r="6.8" fill="#b8703c"/>
+          <circle cx="287" cy="283" r="4.4" fill="#c9834a"/>
+        </g>
+
+        <!-- 텃밭 -->
+        <path d="M0,296 C50,286 110,299 160,292 C210,286 262,296 300,289 L300,378 L0,378 Z"
+              fill="url(#field)"/>
+        <g fill="none" stroke="#ab9f6c" opacity="0.5" stroke-linecap="round">
+          <path d="M0,312 C50,302 110,315 160,308 C210,302 262,312 300,305" stroke-width="2"/>
+          <path d="M0,330 C50,320 110,333 160,326 C210,320 262,330 300,323" stroke-width="2.4"/>
+          <path d="M0,350 C50,340 110,353 160,346 C210,340 262,350 300,343" stroke-width="2.8"/>
+          <path d="M0,372 C50,362 110,375 160,368 C210,362 262,372 300,365" stroke-width="3.2"/>
+        </g>
+
+        <g class="crops">
+          <g class="sway" style="--dur:3.4s; --d:-0.1s"><use href="#sprout" transform="translate(24,310) scale(0.8)"/></g>
+          <g class="sway" style="--dur:3.9s; --d:-1.2s"><use href="#sprout" transform="translate(82,306) scale(0.8)"/></g>
+          <g class="sway" style="--dur:3.2s; --d:-0.7s"><use href="#sprout" transform="translate(142,309) scale(0.8)"/></g>
+          <g class="sway" style="--dur:4.1s; --d:-1.9s"><use href="#sprout" transform="translate(204,304) scale(0.8)"/></g>
+          <g class="sway" style="--dur:3.6s; --d:-2.4s"><use href="#sprout" transform="translate(264,307) scale(0.8)"/></g>
+
+          <g class="sway" style="--dur:3.7s; --d:-0.5s"><use href="#sprout" transform="translate(46,328) scale(0.92)"/></g>
+          <g class="sway" style="--dur:3.1s; --d:-1.6s"><use href="#sprout" transform="translate(108,331) scale(0.92)"/></g>
+          <g class="sway" style="--dur:4.2s; --d:-0.2s"><use href="#sprout" transform="translate(170,326) scale(0.92)"/></g>
+          <g class="sway" style="--dur:3.5s; --d:-2.2s"><use href="#sprout" transform="translate(232,328) scale(0.92)"/></g>
+          <g class="sway" style="--dur:3.9s; --d:-1.1s"><use href="#sprout" transform="translate(288,324) scale(0.92)"/></g>
+
+          <g class="sway" style="--dur:3.3s; --d:-1.8s"><use href="#sprout" transform="translate(20,349) scale(1.05)"/></g>
+          <g class="sway" style="--dur:4.0s; --d:-0.6s"><use href="#sprout" transform="translate(84,352) scale(1.05)"/></g>
+          <g class="sway" style="--dur:3.6s; --d:-2.7s"><use href="#sprout" transform="translate(150,346) scale(1.05)"/></g>
+          <g class="sway" style="--dur:3.2s; --d:-1.3s"><use href="#sprout" transform="translate(216,348) scale(1.05)"/></g>
+          <g class="sway" style="--dur:4.1s; --d:-0.4s"><use href="#sprout" transform="translate(278,344) scale(1.05)"/></g>
+
+          <g class="sway" style="--dur:3.8s; --d:-2.1s"><use href="#sprout" transform="translate(54,372) scale(1.2)"/></g>
+          <g class="sway" style="--dur:3.4s; --d:-0.9s"><use href="#sprout" transform="translate(128,368) scale(1.2)"/></g>
+          <g class="sway" style="--dur:4.2s; --d:-1.7s"><use href="#sprout" transform="translate(202,371) scale(1.2)"/></g>
+          <g class="sway" style="--dur:3.5s; --d:-0.3s"><use href="#sprout" transform="translate(270,367) scale(1.2)"/></g>
+        </g>
+
+        <!-- 개울 -->
+        <path d="M0,372 C50,364 110,378 160,372 C212,366 262,376 300,370 L300,450 L0,450 Z"
+              fill="url(#water)"/>
+
+        <g clip-path="url(#clipWater)">
+          <g class="ripple" style="--d:0s" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round">
+            <path d="M28,392 q9,-3.2 18,0"/><path d="M126,400 q10,-3.2 20,0"/><path d="M236,388 q9,-3.2 18,0"/>
+          </g>
+          <g class="ripple" style="--d:-2s" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round">
+            <path d="M64,414 q8,-3 16,0"/><path d="M174,408 q9,-3 18,0"/><path d="M266,418 q8,-3 16,0"/>
+          </g>
+          <g class="ripple" style="--d:-4s" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round">
+            <path d="M12,434 q9,-3 18,0"/><path d="M118,440 q9,-3 18,0"/><path d="M224,432 q8,-3 16,0"/>
+          </g>
+
+          <g class="fish fish-1"><g class="bob"><use href="#fish" transform="translate(0,396)"/></g></g>
+          <g class="fish fish-2"><g class="bob"><use href="#fish" transform="translate(0,420) scale(0.78)"/></g></g>
+          <g class="fish fish-3"><g class="bob"><use href="#fish" transform="translate(0,438) scale(1.1)"/></g></g>
+        </g>
+
+        <!-- 개울가 풀 -->
+        <g class="bank">
+          <g class="sway" style="--dur:2.9s; --d:-0.3s">
+            <path d="M16,376 C15,368 18,363 20,359" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M21,377 C22,369 20,364 18,360" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M26,377 C27,370 26,366 25,363" stroke="#6f9a58" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          </g>
+          <g class="sway" style="--dur:3.4s; --d:-1.4s">
+            <path d="M104,382 C103,374 106,369 108,365" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M109,383 C110,375 108,370 106,366" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g class="sway" style="--dur:3.1s; --d:-2.2s">
+            <path d="M204,376 C203,368 206,363 208,359" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M209,377 C210,369 208,364 206,360" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M214,377 C215,370 214,366 213,363" stroke="#6f9a58" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          </g>
+          <g class="sway" style="--dur:2.7s; --d:-0.9s">
+            <path d="M282,374 C281,366 284,361 286,357" stroke="#6f9a58" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M287,375 C288,367 286,362 284,358" stroke="#7fab63" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </figure>
+  </aside>
+
+  <!-- ==================== 본문 ==================== -->
+  <div class="content">
+
+    <section class="section">
+      <h2>저서</h2>
+      <p class="section-intro">
+        보안 솔루션을 만들어 본 적 없는 사람을 위해 쓴 Security School 시리즈입니다.
+        요구사항을 모으고, UML로 설계하고, 리눅스 커널을 수정해 가며 백신을 완성하는
+        과정을 이야기로 담았습니다.
       </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#books">만든 것들 보기</a>
-        <a class="btn" href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== ABOUT ==================== -->
-  <section class="section" id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label"><span class="num">01</span> ABOUT</p>
-        <h2 class="section-title">소개</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            보안 소프트웨어를 만들며 커리어를 시작했습니다. 악성코드를 걸러내는 엔진부터
-            커널을 건드리는 방어 계층까지, 눈에 잘 보이지 않는 자리에서 동작하는 소프트웨어를
-            오래 다뤘습니다.
-          </p>
-          <p>
-            지금 관심은 하나입니다 — <strong>기존에 없던 편리한 무언가를 만드는 것.</strong>
-            이미 있는 것을 조금 낫게 만드는 일보다, 아직 아무도 만들지 않아서 모두가 불편을
-            감수하고 있는 지점을 찾는 쪽이 재미있습니다. 이 사이트는 그렇게 만들어 온 결과물을
-            한자리에 모아둔 곳입니다.
-          </p>
-        </div>
-
-        <ol class="career">
-          <li class="career-item is-current">
-            <span class="career-when">현재</span>
-            <div class="career-body">
-              <h3>삼성전자</h3>
-              <p>개발자</p>
-            </div>
-          </li>
-          <li class="career-item">
-            <span class="career-when">10년</span>
-            <div class="career-body">
-              <h3>안랩 <span class="muted">AhnLab</span></h3>
-              <p>다수의 보안 솔루션 개발 — PC용 V3 방화벽, 침입차단 시스템 엔진, 웹 보안 솔루션</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-
-      <p class="keywords">
-        <span class="keywords-label">KEYWORDS</span>
-        <span>Linux &middot; Kernel &middot; Antivirus &middot; IoT Security &middot; UML / Software Design &middot; Mobile App</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- ==================== BOOKS ==================== -->
-  <section class="section section-alt" id="books">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label"><span class="num">02</span> BOOKS</p>
-        <h2 class="section-title">저서</h2>
-        <p class="section-desc">
-          보안 솔루션을 만들어 본 적 없는 사람을 위한 <strong>Security School</strong> 시리즈.
-          요구사항을 모으고, UML로 설계하고, 리눅스 커널을 수정해 가며 백신을 완성하는
-          과정을 이야기로 담았습니다.
-        </p>
-      </div>
-
-      <figure class="pullquote">
-        <blockquote>저도 백신을 개발할 수 있을까요?</blockquote>
-        <figcaption>네. 여러분도 개발할 수 있습니다. 백신도 소프트웨어의 한 종류니까요.</figcaption>
-      </figure>
-
-      <ol class="flow">
-        <li>요구사항</li>
-        <li>프로토타입</li>
-        <li>설계</li>
-        <li>구현</li>
-        <li>테스트</li>
-      </ol>
 
       <!-- 책이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
-      <ul class="entries">
-
+      <ul class="rows">
         <li>
-          <a class="entry" href="https://product.kyobobook.co.kr/detail/S000202225021" target="_blank" rel="noopener noreferrer">
-            <div class="entry-visual entry-visual-book">
-              <img src="assets/book-ko-2023.jpg" alt="『UML로 개발하는 리눅스 백신 프로그램』 표지"
-                   width="478" height="692" loading="lazy" decoding="async">
-            </div>
-            <div class="entry-body">
-              <div class="entry-head">
-                <h3 class="entry-title">UML로 개발하는 리눅스 백신 프로그램</h3>
-                <span class="pill pill-live">판매 중</span>
-              </div>
-              <p class="entry-sub">초보 개발자가 소프트웨어 공모전에 도전하는 이야기</p>
-              <p class="entry-meta">국내판 &middot; 소나무에 &middot; 2023 &middot; 331쪽</p>
-            </div>
-            <span class="entry-go">교보문고<span class="ext" aria-hidden="true">↗</span></span>
-          </a>
+          <a href="https://product.kyobobook.co.kr/detail/S000202225021" target="_blank" rel="noopener noreferrer">UML로 개발하는 리눅스 백신 프로그램</a>
+          <span class="meta">소나무에 · 2023</span>
         </li>
-
         <li>
-          <a class="entry" href="https://www.amazon.com/-/ko/dp/B077VRYKYP" target="_blank" rel="noopener noreferrer">
-            <div class="entry-visual entry-visual-book">
-              <img src="assets/book-en-2017.jpg" alt="“Beginning Linux Antivirus Development” 표지"
-                   width="405" height="500" loading="lazy" decoding="async">
-            </div>
-            <div class="entry-body">
-              <div class="entry-head">
-                <h3 class="entry-title">Beginning Linux Antivirus Development</h3>
-                <span class="pill pill-live">판매 중</span>
-              </div>
-              <p class="entry-sub">The Story about IoT Security Design with UML</p>
-              <p class="entry-meta">영문판 &middot; Kindle &middot; 2017</p>
-            </div>
-            <span class="entry-go">Amazon<span class="ext" aria-hidden="true">↗</span></span>
-          </a>
+          <a href="https://www.amazon.com/-/ko/dp/B077VRYKYP" target="_blank" rel="noopener noreferrer">Beginning Linux Antivirus Development</a>
+          <span class="meta">영문판 · 2017</span>
         </li>
-
         <li>
-          <a class="entry" href="https://www.hanbit.co.kr/books/%EC%A7%81%EC%A0%91-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94-iot-%EB%B0%B1%EC%8B%A0-%EC%B4%88%EA%B8%89?code=B8304726903" target="_blank" rel="noopener noreferrer">
-            <div class="entry-visual entry-visual-book">
-              <img src="assets/book-hanbit-2017.jpg" alt="『직접 설계하고 개발하는 IoT 백신(초급)』 표지"
-                   width="400" height="514" loading="lazy" decoding="async">
-            </div>
-            <div class="entry-body">
-              <div class="entry-head">
-                <h3 class="entry-title">직접 설계하고 개발하는 IoT 백신(초급)</h3>
-                <span class="pill pill-retired">절판</span>
-              </div>
-              <p class="entry-sub">같은 내용을 처음 출간한 판본</p>
-              <p class="entry-meta">한빛미디어 &middot; 2017 &middot; 300쪽</p>
-            </div>
-            <span class="entry-go">한빛미디어<span class="ext" aria-hidden="true">↗</span></span>
-          </a>
+          <a href="https://www.hanbit.co.kr/books/%EC%A7%81%EC%A0%91-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94-iot-%EB%B0%B1%EC%8B%A0-%EC%B4%88%EA%B8%89?code=B8304726903" target="_blank" rel="noopener noreferrer">직접 설계하고 개발하는 IoT 백신(초급)</a>
+          <span class="meta">한빛미디어 · 2017 · 절판</span>
         </li>
-
+        <li>
+          <a href="https://www.youtube.com/watch?v=dAGKQBZxKFI" target="_blank" rel="noopener noreferrer">책에서 만드는 백신이 동작하는 모습</a>
+          <span class="meta">데모 영상</span>
+        </li>
       </ul>
+    </section>
 
-      <a class="video-link" href="https://www.youtube.com/watch?v=dAGKQBZxKFI" target="_blank" rel="noopener noreferrer">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/dAGKQBZxKFI/mqdefault.jpg" alt=""
-               width="320" height="180" loading="lazy" decoding="async">
-          <span class="video-play" aria-hidden="true"></span>
-        </div>
-        <div class="video-body">
-          <p class="video-label">DEMO VIDEO</p>
-          <p class="video-title">책에서 만드는 백신이 실제로 동작하는 모습</p>
-        </div>
-        <span class="entry-go">YouTube<span class="ext" aria-hidden="true">↗</span></span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ==================== APPS ==================== -->
-  <section class="section" id="apps">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label"><span class="num">03</span> APPS</p>
-        <h2 class="section-title">앱</h2>
-        <p class="section-desc">불편한데 아무도 만들지 않고 있던 것들을 하나씩 만들고 있습니다.</p>
-      </div>
+    <section class="section">
+      <h2>앱</h2>
 
       <!-- 앱이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
-      <ul class="entries">
-
+      <ul class="blocks">
         <li>
-          <a class="entry" href="https://ian-works.github.io/blue-argos/" target="_blank" rel="noopener noreferrer">
-            <div class="entry-visual entry-visual-app">
-              <img src="assets/blue-argos-icon.png" alt="BlueArgos 앱 아이콘"
-                   width="256" height="256" loading="lazy" decoding="async">
-            </div>
-            <div class="entry-body">
-              <div class="entry-head">
-                <h3 class="entry-title">BlueArgos</h3>
-                <span class="pill pill-testing">테스트 중</span>
-              </div>
-              <p class="entry-sub">깨끗하고 편리한 과속카메라 알림</p>
-              <p class="entry-desc">
-                경로를 입력하지 않아도 지금 달리는 길 위의 카메라를 알려줍니다.
-                현재 속도를 기준으로 모든 카메라를 똑같이 15초 전에.
-                회원가입도, 차량 정보도, 광고도 없습니다.
-              </p>
-              <p class="entry-meta">iOS &middot; Android</p>
-            </div>
-            <span class="entry-go">자세히 보기<span class="ext" aria-hidden="true">↗</span></span>
-          </a>
+          <p class="block-head">
+            <a href="https://ian-works.github.io/blue-argos/" target="_blank" rel="noopener noreferrer">BlueArgos</a>
+            <span class="meta">테스트 중</span>
+          </p>
+          <p class="note">
+            깨끗하고 편리한 과속카메라 알림. 경로를 입력하지 않아도 지금 달리는 길 위의
+            카메라를 현재 속도 기준으로 똑같이 15초 전에 알려줍니다. 회원가입도, 차량 정보도,
+            광고도 없습니다.
+          </p>
         </li>
-
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==================== WEB SERVICES ==================== -->
-  <section class="section section-alt" id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="section-label"><span class="num">04</span> WEB SERVICE</p>
-        <h2 class="section-title">웹 서비스</h2>
-      </div>
+    <section class="section">
+      <h2>웹 서비스</h2>
 
       <!-- 서비스가 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
-      <ul class="entries">
-
+      <ul class="blocks">
         <li>
-          <div class="entry is-wip">
-            <div class="entry-visual entry-visual-empty" aria-hidden="true">
-              <span class="wip-mark"></span>
-            </div>
-            <div class="entry-body">
-              <div class="entry-head">
-                <h3 class="entry-title">Save my time</h3>
-                <span class="pill pill-building">개발 중</span>
-              </div>
-              <p class="entry-sub">반복에 쓰는 시간을 돌려주는 웹 서비스</p>
-              <p class="entry-desc">아직 만드는 중입니다. 준비되는 대로 이곳에 공개합니다.</p>
-            </div>
-          </div>
+          <p class="block-head">
+            <span class="name">Save my time</span>
+            <span class="meta">기획 중</span>
+          </p>
+          <p class="note">사람들의 시간을 아껴주기 위해 준비 중인 웹 서비스입니다.</p>
         </li>
-
       </ul>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <footer class="footer">
+      <p>
+        <a href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="sep">·</span>
+        © <span id="year">2026</span> Ian Lee
+      </p>
+    </footer>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span>Ian Lee</span>
-    </div>
-    <nav class="footer-links" aria-label="바로가기">
-      <a href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span></a>
-      <a href="https://ian-works.github.io/blue-argos/" target="_blank" rel="noopener noreferrer">BlueArgos<span class="ext" aria-hidden="true">↗</span></a>
-    </nav>
-    <p class="footer-note">&copy; <span id="year">2026</span> Ian Lee</p>
   </div>
-</footer>
+</div>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
