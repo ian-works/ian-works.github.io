@@ -51,6 +51,9 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* 한글은 기본값으로 두면 단어 중간에서 끊긴다("만듭니/다.") */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 img { max-width: 100%; display: block; }
@@ -531,18 +534,16 @@ a.entry:hover .ext { transform: translate(2px, -2px); }
 .video-thumb {
   position: relative;
   width: 116px;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   overflow: hidden;
   background: #000;
 }
 
-/* hqdefault 썸네일은 4:3 안에 레터박스가 들어 있어, 가운데를 키워 잘라낸다 */
 .video-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  scale: 1.35;
 }
 
 .video-play {
