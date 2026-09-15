@@ -34,14 +34,10 @@
     <p class="handle"><a href="https://github.com/ian-works" target="_blank" rel="noopener noreferrer">@ian-works</a></p>
 
     <p class="lede">
-      보안 소프트웨어를 만드는 개발자입니다. 안랩에서 10년간 PC용 V3 방화벽과
-      침입차단 시스템 엔진, 웹 보안 솔루션을 개발했고, 지금은 삼성전자에서 일합니다.
+      보안 회사에서 보안 솔루션을 개발했고, 지금은 국내 전자회사에서 일합니다.
     </p>
     <p class="lede">
-      악성코드를 걸러내는 엔진부터 커널을 건드리는 방어 계층까지, 눈에 잘 보이지 않는
-      자리에서 동작하는 소프트웨어를 오래 다뤘습니다. 요즘 관심은 하나입니다 —
-      기존에 없던 편리한 무언가를 만드는 것. 이미 있는 것을 조금 낫게 만드는 일보다,
-      아직 아무도 만들지 않아서 모두가 불편을 감수하고 있는 지점을 찾는 쪽이 재미있습니다.
+      사람들에게 편리하고 이로운 무언가를 만드는 걸 좋아합니다.
     </p>
   </header>
 
@@ -128,21 +124,38 @@
           </g></g>
         </g>
 
-        <!-- 먼 산 -->
-        <path d="M0,212 L30,178 L56,196 L92,156 L124,190 L156,166 L190,198 L224,168 L258,200 L300,178 L300,280 L0,280 Z"
-              fill="#a5c1d3"/>
-        <path d="M92,156 L108,176 L76,176 Z" fill="#cfe2ec" opacity="0.8"/>
-        <path d="M224,168 L238,186 L210,186 Z" fill="#cfe2ec" opacity="0.75"/>
+        <!-- 큰 산 하나 -->
+        <path d="M-14,318
+                 C24,290 52,264 78,228
+                 C100,198 116,156 136,120
+                 C142,109 154,107 160,122
+                 C176,162 196,196 216,224
+                 C244,262 276,290 314,318 Z"
+              fill="#88a57e"/>
+        <!-- 능선을 비스듬히 두고 오른쪽에 그늘 -->
+        <path d="M147,112
+                 C158,178 168,252 182,318
+                 L314,318
+                 C276,290 244,262 216,224
+                 C196,196 176,162 160,122
+                 C155,110 150,108 147,112 Z"
+              fill="#78956f"/>
+        <!-- 골짜기 자국 -->
+        <g fill="none" stroke="#7b9873" stroke-width="1.6" stroke-linecap="round" opacity="0.6">
+          <path d="M120,150 C112,192 100,236 84,282"/>
+          <path d="M136,168 C132,208 126,248 118,292"/>
+        </g>
+        <g fill="none" stroke="#6d8964" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+          <path d="M178,170 C192,208 210,248 232,288"/>
+        </g>
+        <!-- 정상 부근 바위 -->
+        <path d="M136,120 C142,109 154,107 160,122 C154,118 142,118 136,120 Z" fill="#a3b99c" opacity="0.9"/>
 
-        <!-- 가운데 산 -->
-        <path d="M0,240 L34,214 L70,234 L104,204 L140,232 L176,210 L212,236 L250,212 L300,234 L300,300 L0,300 Z"
-              fill="#92ad9b"/>
+        <!-- 산 중턱의 한옥. 산이 커 보이도록 집은 조금 줄여 앉힌다 -->
+        <g transform="translate(150,278) scale(0.85) translate(-150,-278)">
+        <!-- 축대 터 -->
+        <path d="M96,278 C112,270 188,270 204,278 C188,285 112,285 96,278 Z" fill="#92ae88"/>
 
-        <!-- 한옥이 앉은 산등성이 -->
-        <path d="M0,274 C40,262 82,270 120,264 C158,258 196,268 238,261 C266,256 284,262 300,259 L300,330 L0,330 Z"
-              fill="#7d9c6e"/>
-
-        <!-- 산 중턱의 한옥 -->
         <g class="hanok">
           <!-- 축대 -->
           <rect x="114" y="272" width="72" height="5" rx="1" fill="#9c9484"/>
@@ -162,6 +175,13 @@
           <!-- 용마루 -->
           <path d="M124,229 L176,229 L173,225 L127,225 Z" fill="#3c454f"/>
         </g>
+        </g>
+
+        <!-- 산비탈 위쪽 나무들 — 작게 두어 거리를 준다 -->
+        <g class="sway" style="--dur:8.6s; --d:-1.1s"><use href="#pine" transform="translate(96,214) scale(0.5)"/></g>
+        <g class="sway" style="--dur:7.4s; --d:-3.3s"><use href="#pine" transform="translate(76,248) scale(0.62)"/></g>
+        <g class="sway" style="--dur:9.1s; --d:-2.0s"><use href="#pine" transform="translate(226,244) scale(0.58)"/></g>
+        <g class="sway" style="--dur:8.0s; --d:-4.4s"><use href="#pine" transform="translate(208,212) scale(0.46)"/></g>
 
         <!-- 산자락의 나무들 -->
         <g class="sway" style="--dur:6.6s; --d:-0.4s"><use href="#pine" transform="translate(40,288)"/></g>
@@ -271,12 +291,6 @@
 
     <section class="section">
       <h2>저서</h2>
-      <p class="section-intro">
-        보안 솔루션을 만들어 본 적 없는 사람을 위해 쓴 Security School 시리즈입니다.
-        요구사항을 모으고, UML로 설계하고, 리눅스 커널을 수정해 가며 백신을 완성하는
-        과정을 이야기로 담았습니다.
-      </p>
-
       <!-- 책이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
       <ul class="rows">
         <li>
@@ -299,7 +313,7 @@
     </section>
 
     <section class="section">
-      <h2>앱</h2>
+      <h2>App</h2>
 
       <!-- 앱이 늘어나면 li 하나를 같은 형태로 추가하면 된다 -->
       <ul class="blocks">
