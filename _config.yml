@@ -1,0 +1,7 @@
+# GitHub Pages(Jekyll) 빌드 설정.
+# _ 로 시작하는 디렉터리는 Jekyll이 기본적으로 결과물에 넣지 않지만,
+# 의도를 분명히 하려고 명시해 둔다. git에는 남고 웹으로는 노출되지 않는다.
+exclude:
+  - _notes
+  - _config.yml
+  - README.md
