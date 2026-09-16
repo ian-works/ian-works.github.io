@@ -11,8 +11,16 @@
   --link-underline: #c7c6be;
   --art-edge: #e3e2dc;
 
+  /* 한글 차례의 "Apple SD Gothic Neo"/"Malgun Gothic" 은 지우지 마세요.
+     구글은 Noto Serif KR 을 글자마다 다른 서브셋 파일로 쪼개 보냅니다
+     ('저'와 '서'가 서로 다른 파일입니다). 한 파일이 늦거나 실패하면 그
+     글자만 폴백으로 떨어지는데, macOS 기본 한글 세리프(AppleMyungjo)는
+     볼드가 없어서 **제목의 글자 하나만 가늘게** 보입니다. 볼드를 가진
+     한글 폰트를 뒤에 세워 굵기가 갈리지 않게 합니다.
+     ("Nanum Myeongjo" 처럼 설치돼 있지 않은 이름은 넣지 마세요 —
+     한글 차례를 가로채고 볼드 없이 그려서 오히려 문제를 되살립니다) */
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
-    Georgia, "Noto Serif KR", serif;
+    Georgia, "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", serif;
   --font-ui: ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
 }
