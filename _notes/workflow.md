@@ -130,7 +130,7 @@ html,body{{margin:0;background:#f7f7f4}}
 .scene .fish-3{{animation-delay:-8s!important}}
 </style></head><body><div class="og"><div class="og-text">
 <p class="og-name">Ian Lee</p>
-<p class="og-line">사람들에게 편리하고 이로운 무언가를 만드는 걸 좋아합니다.</p>
+<p class="og-line">사람들에게 편리하고,<br>이로운 무언가를 만듭니다.</p>
 <p class="og-kinds">저서 · 앱 · 웹 서비스</p>
 <p class="og-url">ian-works.github.io</p>
 </div><figure class="og-art">{svg}</figure></div></body></html>""")

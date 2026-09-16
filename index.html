@@ -36,10 +36,11 @@
     <h1>Ian Lee</h1>
 
     <p class="lede">
-      보안 회사에서 보안 솔루션을 개발했었고, 현재는 국내 전자회사에서 개발자로 근무 중입니다.
+      보안 회사에서 보안 솔루션을 개발했고, 현재는 국내 전자회사에서
+      AI와 데이터 관련 개발자로 근무 중입니다.
     </p>
     <p class="lede">
-      사람들에게 편리하고 이로운 무언가를 만드는 걸 좋아합니다.
+      사람들에게 편리하고 이로운 무언가를 만듭니다.
     </p>
   </header>
 
@@ -47,7 +48,7 @@
   <aside class="art">
     <figure class="scene-wrap">
       <svg class="scene" viewBox="0 0 300 450" role="img"
-           aria-label="가을 산골 풍경. 겹겹이 물러나는 단풍 든 산, 그 아래 한옥 한 채, 앞으로 배추가 자란 텃밭과 울타리, 맨 앞에는 조약돌이 비치는 개울이 흐릅니다. 바람에 나무와 풀이 흔들리고, 개울에는 물고기가, 하늘에는 뭉게구름과 새떼가 지나갑니다.">
+           aria-label="가을 산골 풍경. 겹겹이 물러나는 단풍 든 산, 그 아래 한옥 한 채와 그 지붕에 옆으로 앉아 고개만 돌려 앞을 보는 흰 고양이, 앞으로 배추가 자란 텃밭과 울타리, 맨 앞에는 조약돌이 비치는 개울이 흐릅니다. 바람에 나무와 풀이 흔들리고, 고양이는 처마 너머로 늘어뜨린 꼬리를 살랑이고, 개울에는 물고기가, 하늘에는 뭉게구름과 새떼가 지나갑니다.">
         <defs>
           <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stop-color="#7cc3e6"/>
@@ -278,13 +279,99 @@
           <path d="M76,282 L106,282 L106,278.5 L76,278.5 Z" fill="#7e7b85"/>
           <path d="M196,292 L222,292 L222,282 L196,282 Z" fill="#dccdae"/>
           <path d="M194,282 L224,282 L224,278.5 L194,278.5 Z" fill="#7e7b85"/>
+
+          <!-- 지붕 위의 고양이. 흰 랙돌 — 얼굴 가면·귀·꼬리만 연회색 포인트다.
+               기준점은 앞발이 기와에 닿는 자리. 몸은 옆으로 앉고 얼굴만 정면을 본다.
+               얼굴은 `translate(13,-45)` 한 겹 안에 있어 따로 옮기거나 키울 수 있다 -->
+          <g class="cat" transform="translate(134,259) scale(0.75)">
+            <!-- 기와에 드리운 그림자 -->
+            <ellipse cx="-3" cy="0.8" rx="23" ry="3.2" fill="#5e5b66" opacity="0.16"/>
+
+            <!-- 꼬리. 바깥 그룹이 자리를 잡고 안쪽 그룹이 살랑거린다 -->
+            <g transform="translate(-20,-4)"><g class="tail">
+              <path d="M0,0 C-8,-0.6 -14,4 -15,13 C-15.6,20 -12,25.4 -7,26.4"
+                    fill="none" stroke="#b5a69e" stroke-width="8.6" stroke-linecap="round"/>
+              <path d="M0,0 C-8,-0.6 -14,4 -15,13 C-15.6,20 -12,25.4 -7,26.4"
+                    fill="none" stroke="#cdc0b8" stroke-width="4.2" stroke-linecap="round"/>
+              <circle cx="-7" cy="26.4" r="3.8" fill="#dad0c9"/>
+            </g></g>
+
+            <!-- 옆으로 앉은 몸통. 엉덩이가 낮고 넓게 퍼지고 어깨에서 목으로 올라간다 -->
+            <path d="M-24,0 C-30,-2 -29,-12 -24,-18 C-19,-26 -10,-32 -1,-35.5
+                     C7,-38.5 14,-36 16.5,-30 C18.5,-25 18,-14 18.5,-5
+                     C19,-1.5 17,0 13.5,0 C6,0 0,-2 -6,-1.4 C-12,-0.8 -18,0 -24,0 Z"
+                  fill="#f4efe6"/>
+            <path d="M-24,-18 C-19,-26 -10,-32 -1,-35.5 C7,-38.5 14,-36 16.5,-30
+                     C13,-34 6,-35.4 -1,-33 C-10,-29.6 -18,-24 -24,-18 Z" fill="#e6ded0"/>
+
+            <!-- 뒷다리와 그 앞으로 나온 뒷발 -->
+            <ellipse cx="-13" cy="-10" rx="11" ry="9.4" fill="#ece5d9"/>
+            <ellipse cx="-3" cy="-1.8" rx="8" ry="2.9" fill="#fbf8f2"/>
+
+            <!-- 앞다리 두 짝. 먼 쪽을 살짝 어둡게 해서 갈라 보이게 한다 -->
+            <path d="M4,-24 C8,-25.2 10.6,-22.2 10.6,-17 L10.8,-4
+                     C10.8,-1.6 9.6,-0.6 7.4,-0.6 L5,-0.6 C3,-0.6 2,-1.8 2.2,-4 Z" fill="#eae2d5"/>
+            <path d="M8,-28 C13.5,-29.2 17.6,-25.6 17.6,-19 L18,-4
+                     C18,-1.4 16.6,-0.2 14,-0.2 L10.4,-0.2 C8,-0.2 6.8,-1.6 7,-4 Z" fill="#fbf8f2"/>
+            <g fill="none" stroke="#e3dbcd" stroke-width="0.8" stroke-linecap="round">
+              <path d="M11.6,-3.6 C11.8,-2.2 11.8,-1.2 11.6,-0.6"/>
+              <path d="M14.6,-3.6 C14.8,-2.2 14.8,-1.2 14.6,-0.6"/>
+            </g>
+
+            <!-- 가슴털 -->
+            <ellipse cx="13" cy="-31" rx="9.5" ry="7.6" fill="#fbf8f2"/>
+
+            <!-- 얼굴. 몸은 옆을 보고 고개만 돌려 정면을 본다. 머리 한가운데가 원점 -->
+            <g transform="translate(13,-45)">
+              <!-- 귀는 머리보다 먼저 그려 뒤로 보낸다 -->
+              <path d="M-11.5,-6 L-14,-18 L-3.5,-10.5 Z" fill="#b0a199"/>
+              <path d="M11.5,-6 L14,-18 L3.5,-10.5 Z" fill="#b0a199"/>
+              <path d="M-10.8,-8.2 L-12.4,-15.2 L-5.6,-10.6 Z" fill="#d8ccc5"/>
+              <path d="M10.8,-8.2 L12.4,-15.2 L5.6,-10.6 Z" fill="#d8ccc5"/>
+
+              <!-- 머리와 연회색 가면 -->
+              <circle r="12" fill="#f4efe6"/>
+              <path d="M-10,-6.5 C-9.6,-11 -5,-11.8 0,-11.8 C5,-11.8 9.6,-11 10,-6.5
+                       C10.4,-1.5 8,2.5 4.4,4.4 C2.6,2.4 -2.6,2.4 -4.4,4.4
+                       C-8,2.5 -10.4,-1.5 -10,-6.5 Z" fill="#b8aaa2"/>
+              <path d="M-2.4,-11.4 C0.6,-9 1.4,-4 0.6,0.4 C-0.6,-0.4 -1.8,-0.4 -2.8,0.2
+                       C-3.6,-4 -3.4,-8.6 -2.4,-11.4 Z" fill="#c8bbb3"/>
+
+              <!-- 랙돌의 파란 눈 -->
+              <path d="M-8.6,-3.6 C-7.6,-6 -3,-6 -2,-3.6 C-3,-1.2 -7.6,-1.2 -8.6,-3.6 Z" fill="#8fb0c8"/>
+              <path d="M8.6,-3.6 C7.6,-6 3,-6 2,-3.6 C3,-1.2 7.6,-1.2 8.6,-3.6 Z" fill="#8fb0c8"/>
+              <ellipse cx="-5.3" cy="-3.6" rx="1.6" ry="2.2" fill="#3b3a3f"/>
+              <ellipse cx="5.3" cy="-3.6" rx="1.6" ry="2.2" fill="#3b3a3f"/>
+              <circle cx="-6.2" cy="-4.5" r="0.7" fill="#ffffff" opacity="0.85"/>
+              <circle cx="4.4" cy="-4.5" r="0.7" fill="#ffffff" opacity="0.85"/>
+
+              <!-- 주둥이, 코, 입 -->
+              <ellipse cx="0" cy="8.4" rx="3" ry="2" fill="#fbf8f2"/>
+              <ellipse cx="-3.4" cy="5.6" rx="4.4" ry="3.3" fill="#fbf8f2"/>
+              <ellipse cx="3.4" cy="5.6" rx="4.4" ry="3.3" fill="#fbf8f2"/>
+              <path d="M-2,2.6 L2,2.6 L0,4.8 Z" fill="#d3a29d"/>
+              <g fill="none" stroke="#c5b5a8" stroke-width="0.8" stroke-linecap="round">
+                <path d="M0,4.8 L0,6"/>
+                <path d="M0,6 C-0.9,7.3 -2.6,7.2 -3.2,6.2"/>
+                <path d="M0,6 C0.9,7.3 2.6,7.2 3.2,6.2"/>
+              </g>
+              <g fill="none" stroke="#f6f1e8" stroke-width="0.8" stroke-linecap="round" opacity="0.95">
+                <path d="M-7,5 C-11.5,4.2 -15,3.8 -17.5,4.2"/>
+                <path d="M-7,6.4 C-11.5,6.6 -15.2,7 -17.6,7.8"/>
+                <path d="M-6.6,7.6 C-10.4,8.8 -13.4,10 -15.4,11"/>
+                <path d="M7,5 C11.5,4.2 15,3.8 17.5,4.2"/>
+                <path d="M7,6.4 C11.5,6.6 15.2,7 17.6,7.8"/>
+                <path d="M6.6,7.6 C10.4,8.8 13.4,10 15.4,11"/>
+              </g>
+            </g>
+          </g>
         </g>
 
         <!-- 집 둘레의 큰 단풍나무 -->
-        <g class="sway" style="--dur:6.8s; --d:-0.4s"><use href="#tree-o" transform="translate(122,244) scale(1.04)"/></g>
+        <g class="sway" style="--dur:6.8s; --d:-0.4s"><use href="#tree-o" transform="translate(66,258) scale(0.95)"/></g>
         <g class="sway" style="--dur:7.9s; --d:-2.5s"><use href="#tree-r" transform="translate(182,242) scale(0.94)"/></g>
         <g class="sway" style="--dur:7.1s; --d:-3.9s"><use href="#tree-y" transform="translate(212,268) scale(0.84)"/></g>
-        <g class="sway" style="--dur:6.4s; --d:-1.8s"><use href="#pine2" transform="translate(92,290) scale(0.86)"/></g>
+        <g class="sway" style="--dur:6.4s; --d:-1.8s"><use href="#pine2" transform="translate(84,290) scale(0.86)"/></g>
         <g class="sway" style="--dur:8.2s; --d:-0.9s"><use href="#tree-o" transform="translate(252,284) scale(0.9)"/></g>
         <g class="sway" style="--dur:7.0s; --d:-4.6s"><use href="#tree-r" transform="translate(26,288) scale(0.88)"/></g>
 
@@ -297,7 +384,10 @@
         </g>
 
         <!-- ================= 텃밭 ================= -->
-        <path d="M-4,320 C30,314 74,324 118,318 C150,314 168,320 190,317 L188,358 L-4,358 Z"
+        <!-- 오른쪽 끝을 직각으로 떨구면 밭이 잘린 절벽처럼 보인다.
+             윗선에서 이어지는 한 번의 곡선으로 개울까지 흘려보낸다 -->
+        <path d="M-4,318 C30,312 74,322 116,317 C142,313 162,317 174,328
+                 C182,336 186,344 188,358 L-4,358 Z"
               fill="#c9b168"/>
         <g fill="none" stroke="#ab9249" stroke-width="1.8" opacity="0.65">
           <path d="M-4,331 C30,325 74,335 116,329"/>

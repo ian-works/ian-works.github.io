@@ -234,6 +234,19 @@ a:hover { text-decoration-color: currentColor; }
   50%      { transform: scaleY(0.42); }
 }
 
+/* 고양이 꼬리 — 처마 너머에서 살랑살랑.
+   꼬리 밑동이 bbox의 오른쪽 위 꼭짓점이라 그 점을 축으로 돈다 */
+.scene .tail {
+  transform-box: fill-box;
+  transform-origin: right top;
+  animation: wag 2.8s ease-in-out infinite;
+}
+
+@keyframes wag {
+  0%, 100% { transform: rotate(-8deg); }
+  50%      { transform: rotate(8deg); }
+}
+
 /* 개울 — 잔물결 */
 .scene .ripple {
   animation: ripple 6s linear infinite;
