@@ -175,6 +175,7 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .footer a { color: var(--text-dim); }
+.footer .copyright { margin-top: 6px; }
 
 /* ================================================================
    풍경 — 뒤에 산, 산 중턱에 한옥, 앞에 텃밭, 그 앞에 개울

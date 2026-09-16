@@ -562,12 +562,17 @@
         <!-- 메일 주소는 소스에 두지 않고 아래 스크립트가 채웁니다 -->
         <span id="mail"><noscript>메일 주소는 자바스크립트를 켜면 보입니다</noscript></span>
       </p>
+      <p class="copyright">© <span id="year">2026</span> Ian Lee</p>
     </footer>
 
   </div>
 </div>
 
 <script>
+  /* 해가 바뀌어도 손대지 않도록 연도는 그때그때 채웁니다 */
+  var yearSlot = document.getElementById('year');
+  if (yearSlot) yearSlot.textContent = new Date().getFullYear();
+
   /* 메일 주소를 HTML 소스에 통째로 두지 않습니다. 주소를 긁어 가는 봇은
      대부분 HTML만 읽고 자바스크립트를 돌리지 않으므로, 실행 시점에
      조립해서 링크로 바꿉니다. 주소를 바꿀 일이 생기면 브라우저 콘솔에서
