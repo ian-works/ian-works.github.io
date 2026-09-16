@@ -255,6 +255,29 @@ a:hover { text-decoration-color: currentColor; }
   50%      { transform: rotate(8deg); }
 }
 
+/* 고양이 입 — 평소엔 다문 채로 있다가 가끔 하품한다 */
+.scene .mouth-closed,
+.scene .mouth-open {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.scene .mouth-closed { animation-name: mouth-close; }
+.scene .mouth-open   { animation-name: mouth-open; opacity: 0; }
+
+@keyframes mouth-close {
+  0%, 88%, 98%, 100% { opacity: 1; }
+  92%, 95%            { opacity: 0; }
+}
+
+@keyframes mouth-open {
+  0%, 88%, 98%, 100% { opacity: 0; transform: scaleY(1); }
+  92%                 { opacity: 1; transform: scaleY(1.25); }
+  95%                 { opacity: 1; transform: scaleY(1.1); }
+}
+
 /* 개울 — 잔물결 */
 .scene .ripple {
   animation: ripple 6s linear infinite;
