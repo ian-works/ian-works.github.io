@@ -174,7 +174,6 @@ a:hover { text-decoration-color: currentColor; }
   color: var(--text-faint);
 }
 
-.footer .sep { margin: 0 8px; }
 .footer a { color: var(--text-dim); }
 
 /* ================================================================
